@@ -1,1 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EWF Solution Marketplace | eWorldfeeders Global Link</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              green: '#059669',
+              darkgreen: '#047857',
+              navy: '#0f172a',
+              gold: '#f59e0b',
+              accent: '#2563eb'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(229, 231, 235, 0.8);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #059669 0%, #2563eb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
 
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-gradient-to-r from-emerald-800 via-teal-900 to-slate-900 text-white text-xs md:text-sm py-2 px-4 text-center font-medium shadow-inner">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center space-x-2 mx-auto md:mx-0">
+        <span class="bg-emerald-500 text-slate-900 text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full">New</span>
+        <span>Empowering Businesses, Agriculture & Technology Globally</span>
+      </div>
+      <div class="flex items-center space-x-4 mx-auto md:mx-0 text-xs">
+        <a href="https://ewf.edu.netlify.app" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1 font-semibold">
+          <i class="fa-solid fa-graduation-cap text-amber-400"></i> EWF Academy
+        </a>
+        <span class="text-slate-600">|</span>
+        <a href="https://ewfpartners.netlify.app" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1 font-semibold">
+          <i class="fa-solid fa-handshake text-amber-400"></i> Agribusiness Partnership Portal
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="https://eworldfeedersgloballink.netlify.app" target="_blank" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-emerald-600 to-blue-600 flex items-center justify-center text-white font-black text-xl shadow-md group-hover:scale-105 transition transform">
+          EWF
+        </div>
+        <div>
+          <span class="text-xl font-extrabold text-slate-900 tracking-tight block leading-none">eWorldfeeders</span>
+          <span class="text-xs font-semibold text-emerald-600 uppercase tracking-widest">Global Link</span>
+        </div>
+      </a>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-600">
+        <a href="#marketplace" class="hover:text-emerald-600 transition">Marketplace</a>
+        <a href="#about" class="hover:text-emerald-600 transition">About Us</a>
+        <a href="https://eworldfeedersgloballink.netlify.app" target="_blank" class="hover:text-emerald-600 transition flex items-center gap-1">
+          Main Site <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"></i>
+        </a>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/2348062331041?text=Hello%20eWorldfeeders%20Global%20Link,%20I%20would%20like%20to%20make%20an%20inquiry." 
+           target="_blank" 
+           class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl transition shadow-lg shadow-emerald-600/20 flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span class="hidden sm:inline">WhatsApp Us</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-slate-900 text-white overflow-hidden py-20 lg:py-28">
+    <!-- Background Accents -->
+    <div class="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 -mb-12 -ml-12 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-6">
+          <i class="fa-solid fa-store"></i> EWF Solution Marketplace
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+          Transform Your Enterprise With <span class="gradient-text">Next-Gen Solutions</span>
+        </h1>
+        <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+          From advanced software engineering and business automation to sustainable agrotech and green energy systems—discover tailored products designed for ultimate growth.
+        </p>
+
+        <!-- Dynamic Quick Action Links -->
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#marketplace" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-7 py-3.5 rounded-xl shadow-lg transition flex items-center gap-2">
+            Explore Marketplace <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a href="https://eworldfeedersgloballink.netlify.app" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold px-7 py-3.5 rounded-xl transition flex items-center gap-2">
+            Main Website <i class="fa-solid fa-external-link text-xs"></i>
+          </a>
+          <a href="https://ewf.edu.netlify.app" target="_blank" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold px-7 py-3.5 rounded-xl shadow-lg transition flex items-center gap-2">
+            <i class="fa-solid fa-graduation-cap"></i> EWF Academy
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKETPLACE SECTION -->
+  <section id="marketplace" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Solution Categories</h2>
+      <p class="mt-2 text-slate-600">Select a category to filter customized tools, products, and services.</p>
+      
+      <!-- Category Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mt-8" id="category-filters">
+        <button onclick="filterCategory('all')" class="cat-btn active bg-emerald-600 text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition shadow-sm">All Solutions</button>
+        <button onclick="filterCategory('technology')" class="cat-btn bg-slate-200 text-slate-700 hover:bg-slate-300 px-5 py-2.5 rounded-xl font-semibold text-sm transition">Technology</button>
+        <button onclick="filterCategory('ai')" class="cat-btn bg-slate-200 text-slate-700 hover:bg-slate-300 px-5 py-2.5 rounded-xl font-semibold text-sm transition">AI Solutions</button>
+        <button onclick="filterCategory('agriculture')" class="cat-btn bg-slate-200 text-slate-700 hover:bg-slate-300 px-5 py-2.5 rounded-xl font-semibold text-sm transition">Agriculture</button>
+        <button onclick="filterCategory('energy')" class="cat-btn bg-slate-200 text-slate-700 hover:bg-slate-300 px-5 py-2.5 rounded-xl font-semibold text-sm transition">Energy</button>
+        <button onclick="filterCategory('business')" class="cat-btn bg-slate-200 text-slate-700 hover:bg-slate-300 px-5 py-2.5 rounded-xl font-semibold text-sm transition">Business Growth</button>
+      </div>
+    </div>
+
+    <!-- Special Agriculture Partnership Banner -->
+    <div id="agri-banner" class="mb-10 bg-gradient-to-r from-emerald-900 to-teal-800 rounded-2xl p-6 sm:p-8 text-white shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-2 max-w-2xl">
+        <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Strategic Partnership</span>
+        <h3 class="text-2xl font-bold">Agriculture & Farm Digitization Portal</h3>
+        <p class="text-slate-200 text-sm">Looking to collaborate on large-scale agricultural projects, input sourcing, and market linkages? Access our dedicated partner network platform now.</p>
+      </div>
+      <a href="https://ewfpartners.netlify.app" target="_blank" class="shrink-0 bg-amber-400 hover:bg-amber-500 text-slate-950 font-extrabold px-6 py-3.5 rounded-xl transition shadow-lg flex items-center gap-2">
+        Visit EWF Partners Site <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="product-grid">
+      <!-- Products will be injected via JS dynamically -->
+    </div>
+  </section>
+
+  <!-- ACADEMY FEATURE SECTION -->
+  <section class="bg-slate-900 text-white py-16 border-t border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="space-y-4 max-w-xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase">
+          <i class="fa-solid fa-graduation-cap"></i> Capacity Building
+        </div>
+        <h2 class="text-3xl font-extrabold">eWorldfeeders Academy</h2>
+        <p class="text-slate-300 leading-relaxed">
+          Master AI engineering, digital marketing, agrotech tools, and business automation. Build high-income skills with practical training programs backed by industry certifications.
+        </p>
+      </div>
+      <a href="https://ewf.edu.netlify.app" target="_blank" class="bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-extrabold text-lg px-8 py-4 rounded-xl shadow-xl transition transform hover:scale-105 flex items-center gap-3">
+        <span>Enter EWF Academy</span>
+        <i class="fa-solid fa-graduation-cap text-xl"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      <!-- Col 1: Brand Info -->
+      <div class="space-y-4 md:col-span-1">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-black text-lg">
+            EWF
+          </div>
+          <span class="text-lg font-bold text-white">eWorldfeeders Global Link</span>
+        </div>
+        <p class="text-xs leading-relaxed">
+          Connecting businesses with sustainable innovation, high-level technology solutions, and global opportunities.
+        </p>
+        <!-- Facebook Link -->
+        <a href="https://www.facebook.com/eworldfeedersgloballink" target="_blank" class="inline-flex items-center gap-2 text-slate-300 hover:text-emerald-400 font-semibold text-sm transition">
+          <i class="fa-brands fa-facebook text-lg text-blue-500"></i> Follow us on Facebook
+        </a>
+      </div>
+
+      <!-- Col 2: Quick Portals -->
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">EWF Ecosystem</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="https://eworldfeedersgloballink.netlify.app" target="_blank" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-globe text-emerald-500"></i> Main Global Website</a></li>
+          <li><a href="https://ewfpartners.netlify.app" target="_blank" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-leaf text-emerald-500"></i> Agribusiness Partnership Portal</a></li>
+          <li><a href="https://ewf.edu.netlify.app" target="_blank" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-amber-500"></i> EWF Academy</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Solution Categories -->
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Marketplace</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#marketplace" onclick="filterCategory('technology')" class="hover:text-emerald-400 transition">Technology & Software</a></li>
+          <li><a href="#marketplace" onclick="filterCategory('ai')" class="hover:text-emerald-400 transition">AI Consulting & Automation</a></li>
+          <li><a href="#marketplace" onclick="filterCategory('agriculture')" class="hover:text-emerald-400 transition">Agriculture & Agrotech</a></li>
+          <li><a href="#marketplace" onclick="filterCategory('energy')" class="hover:text-emerald-400 transition">Solar & Green Energy</a></li>
+          <li><a href="#marketplace" onclick="filterCategory('business')" class="hover:text-emerald-400 transition">Business Growth</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact -->
+      <div>
+        <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Get In Touch</h4>
+        <ul class="space-y-3 text-xs">
+          <li class="flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-emerald-500 text-base"></i>
+            <a href="https://wa.me/2348062331041" target="_blank" class="hover:text-white transition">08062331041</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fa-solid fa-envelope text-emerald-500"></i>
+            <span>support@eworldfeeders.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+      &copy; <script>document.write(new Date().getFullYear())</script> eWorldfeeders Global Link. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- REQUEST DEMO MODAL -->
+  <div id="demoModal" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 relative shadow-2xl">
+      <button onclick="closeDemoModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl font-bold">&times;</button>
+      <h3 class="text-xl font-bold text-slate-900 mb-2">Request Demo</h3>
+      <p class="text-xs text-slate-500 mb-4">Fill out the details below to request a live demo for <span id="modalProductName" class="font-bold text-emerald-600"></span>.</p>
+      
+      <form onsubmit="submitDemoRequest(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Your Full Name</label>
+          <input type="text" id="demoName" required placeholder="e.g. John Doe" class="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Email / WhatsApp Number</label>
+          <input type="text" id="demoContact" required placeholder="08012345678" class="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Additional Requirements (Optional)</label>
+          <textarea id="demoNote" rows="3" placeholder="Tell us about your project..." class="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-lg text-sm transition shadow-md">
+          Submit & Connect via WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT FOR MARKETPLACE LOGIC -->
+  <script>
+    const whatsappNumber = "2348062331041";
+
+    // Products Database
+    const products = [
+      // Technology
+      {
+        id: "tech-1",
+        category: "technology",
+        name: "Custom Enterprise Websites",
+        description: "Responsive, high-converting custom website design tailored for businesses, brand exposure, and sales optimization.",
+        price: "Contact for Quote",
+        delivery: "5 - 10 Business Days",
+        icon: "fa-laptop-code"
+      },
+      {
+        id: "tech-2",
+        category: "technology",
+        name: "Point of Sale (POS) Systems",
+        description: "Modern POS software with inventory tracking, sales reporting, receipt generation, and multi-store management.",
+        price: "Contact for Quote",
+        delivery: "2 - 5 Business Days",
+        icon: "fa-cash-register"
+      },
+      {
+        id: "tech-3",
+        category: "technology",
+        name: "Cooperative Management Software",
+        description: "Complete management software for savings, loans, member contribution, and automated dividend computation.",
+        price: "Contact for Quote",
+        delivery: "7 - 14 Business Days",
+        icon: "fa-users-gear"
+      },
+      {
+        id: "tech-4",
+        category: "technology",
+        name: "School Management Systems",
+        description: "All-in-one portal for student results, fee collection, attendance, parent messaging, and e-learning integration.",
+        price: "Contact for Quote",
+        delivery: "7 - 14 Business Days",
+        icon: "fa-school"
+      },
+      {
+        id: "tech-5",
+        category: "technology",
+        name: "Business Process Automation",
+        description: "Custom software workflows designed to eliminate repetitive manual operational tasks and boost productivity.",
+        price: "Contact for Quote",
+        delivery: "3 - 7 Business Days",
+        icon: "fa-gears"
+      },
+
+      // AI Solutions
+      {
+        id: "ai-1",
+        category: "ai",
+        name: "AI Prompt Engineering",
+        description: "Custom-tailored AI prompts and workflow templates engineered to boost team productivity by 10x.",
+        price: "Contact for Quote",
+        delivery: "1 - 3 Business Days",
+        icon: "fa-terminal"
+      },
+      {
+        id: "ai-2",
+        category: "ai",
+        name: "AI Business Training",
+        description: "Hands-on team training on adopting generative AI tools, prompt workflows, and workplace AI efficiency.",
+        price: "Contact for Quote",
+        delivery: "Custom Schedule",
+        icon: "fa-chalkboard-user"
+      },
+      {
+        id: "ai-3",
+        category: "ai",
+        name: "AI Workflow Automation",
+        description: "Integrate AI agents and smart bots into customer support, CRM, email response, and sales lead nurturing.",
+        price: "Contact for Quote",
+        delivery: "5 - 10 Business Days",
+        icon: "fa-robot"
+      },
+      {
+        id: "ai-4",
+        category: "ai",
+        name: "AI Business Consulting",
+        description: "Strategic advisory on implementing modern AI infrastructures within corporate operations.",
+        price: "Contact for Quote",
+        delivery: "Ongoing Advisory",
+        icon: "fa-brain"
+      },
+
+      // Agriculture
+      {
+        id: "agri-1",
+        category: "agriculture",
+        name: "Farm Digitization Suite",
+        description: "Digitize farm records, crop cycles, yield estimation, and financial performance with smart agricultural software.",
+        price: "Contact for Quote",
+        delivery: "3 - 7 Business Days",
+        icon: "fa-wheat-awn"
+      },
+      {
+        id: "agri-2",
+        category: "agriculture",
+        name: "AgroTech Solutions",
+        description: "Precision farming tools, IoT sensors integration, and digital monitoring systems for high agricultural yield.",
+        price: "Contact for Quote",
+        delivery: "5 - 12 Business Days",
+        icon: "fa-tractor"
+      },
+      {
+        id: "agri-3",
+        category: "agriculture",
+        name: "Input Sourcing Platform",
+        description: "Direct access to verified seeds, fertilizers, farm tools, and equipment at wholesale partner pricing.",
+        price: "Contact for Quote",
+        delivery: "1 - 3 Business Days",
+        icon: "fa-boxes-packing"
+      },
+      {
+        id: "agri-4",
+        category: "agriculture",
+        name: "Market Linkage Networks",
+        description: "Connecting commercial farmers directly with off-takers, bulk buyers, exporters, and industrial processors.",
+        price: "Contact for Quote",
+        delivery: "Immediate Access",
+        icon: "fa-chart-line"
+      },
+
+      // Energy
+      {
+        id: "energy-1",
+        category: "energy",
+        name: "Solar Energy Audit & Assessment",
+        description: "Comprehensive power audit for homes, farms, and businesses to determine precise solar capacity needs.",
+        price: "Contact for Quote",
+        delivery: "1 - 2 Business Days",
+        icon: "fa-solar-panel"
+      },
+      {
+        id: "energy-2",
+        category: "energy",
+        name: "Solar System Engineering & Design",
+        description: "Tailored solar power system blueprints engineered for optimum efficiency, longevity, and cost-efficiency.",
+        price: "Contact for Quote",
+        delivery: "2 - 4 Business Days",
+        icon: "fa-compass-drafting"
+      },
+      {
+        id: "energy-3",
+        category: "energy",
+        name: "Solar Installation Partnerships",
+        description: "Turnkey clean energy execution, inverter deployment, and maintenance partnerships with certified engineers.",
+        price: "Contact for Quote",
+        delivery: "Project Based",
+        icon: "fa-plug-circle-bolt"
+      },
+
+      // Business Growth
+      {
+        id: "biz-1",
+        category: "business",
+        name: "Digital Transformation Strategy",
+        description: "Comprehensive operational overhaul converting offline traditional processes into digital-first channels.",
+        price: "Contact for Quote",
+        delivery: "7 - 14 Business Days",
+        icon: "fa-chart-pie"
+      },
+      {
+        id: "biz-2",
+        category: "business",
+        name: "Google Business Presence & SEO",
+        description: "Complete Google Business Profile optimization, local search dominance, and Google Maps listing.",
+        price: "Contact for Quote",
+        delivery: "2 - 4 Business Days",
+        icon: "fa-google"
+      },
+      {
+        id: "biz-3",
+        category: "business",
+        name: "Corporate Branding & Identity",
+        description: "Logo creation, brand guidelines, typography, company profiles, and visual marketing assets.",
+        price: "Contact for Quote",
+        delivery: "3 - 7 Business Days",
+        icon: "fa-pen-nib"
+      },
+      {
+        id: "biz-4",
+        category: "business",
+        name: "Digital Marketing Campaigns",
+        description: "Targeted social media advertising, pay-per-click management, lead generation, and sales conversion optimization.",
+        price: "Contact for Quote",
+        delivery: "Monthly Retainer",
+        icon: "fa-bullhorn"
+      }
+    ];
+
+    let currentSelectedProduct = "";
+
+    function renderProducts(filter = 'all') {
+      const grid = document.getElementById('product-grid');
+      grid.innerHTML = '';
+
+      const filteredProducts = filter === 'all' 
+        ? products 
+        : products.filter(p => p.category === filter);
+
+      filteredProducts.forEach(product => {
+        const encodedMessage = encodeURIComponent(`Hello eWorldfeeders Global Link,\n\nI am interested in buying/ordering: *${product.name}*.\nPlease provide me with starting price and details.`);
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+        const cardHTML = `
+          <div class="glass-card rounded-2xl p-6 flex flex-col justify-between hover:shadow-xl transition transform hover:-translate-y-1">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl font-bold mb-4">
+                <i class="fa-solid ${product.icon}"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2">${product.name}</h3>
+              <p class="text-sm text-slate-600 mb-4 leading-relaxed">${product.description}</p>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 space-y-3">
+              <div class="flex items-center justify-between text-xs">
+                <span class="text-slate-500 font-medium">Starting Price:</span>
+                <a href="${whatsappUrl}" target="_blank" class="text-emerald-700 font-bold hover:underline flex items-center gap-1">
+                  ${product.price} <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+              <div class="flex items-center justify-between text-xs">
+                <span class="text-slate-500 font-medium">Delivery Time:</span>
+                <span class="font-bold text-slate-800">${product.delivery}</span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 pt-2">
+                <button onclick="openDemoModal('${product.name}')" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs py-2.5 rounded-lg transition text-center">
+                  Request Demo
+                </button>
+                <a href="${whatsappUrl}" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2.5 rounded-lg transition text-center flex items-center justify-center gap-1">
+                  Buy / Pay <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+        grid.insertAdjacentHTML('beforeend', cardHTML);
+      });
+    }
+
+    function filterCategory(category) {
+      // Update button styling
+      const buttons = document.querySelectorAll('#category-filters button');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-emerald-600', 'text-white');
+        btn.classList.add('bg-slate-200', 'text-slate-700');
+      });
+
+      event.currentTarget.classList.remove('bg-slate-200', 'text-slate-700');
+      event.currentTarget.classList.add('bg-emerald-600', 'text-white');
+
+      renderProducts(category);
+    }
+
+    function openDemoModal(productName) {
+      currentSelectedProduct = productName;
+      document.getElementById('modalProductName').innerText = productName;
+      document.getElementById('demoModal').classList.remove('hidden');
+    }
+
+    function closeDemoModal() {
+      document.getElementById('demoModal').classList.add('hidden');
+    }
+
+    function submitDemoRequest(e) {
+      e.preventDefault();
+      const name = document.getElementById('demoName').value;
+      const contact = document.getElementById('demoContact').value;
+      const note = document.getElementById('demoNote').value;
+
+      const message = `Hello eWorldfeeders Global Link,\n\nI would like to request a demo for: *${currentSelectedProduct}*.\n\n*My Details:*\n- Name: ${name}\n- Contact: ${contact}\n- Additional Note: ${note || 'N/A'}`;
+      
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+      closeDemoModal();
+    }
+
+    // Initial Render
+    renderProducts('all');
+  </script>
+</body>
+</html>
