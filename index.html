@@ -1,289 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#063B2A">
 
-  <title>
-    EWF Solution Marketplace | eWorldfeeders Global Link
-  </title>
+  <title>EWF Solution Marketplace | eWorldfeeders Global Link</title>
 
-  <meta name="description"
-        content="Explore practical technology, AI, AgroTech, renewable energy, FinTech automation, digital transformation, Web3 and business development solutions from eWorldfeeders Global Link.">
+  <meta name="description" content="Explore practical technology, AI, AgroTech, renewable energy, FinTech automation, digital transformation, Web3 and business development solutions from eWorldfeeders Global Link.">
+  <meta name="keywords" content="eWorldfeeders Global Link, EWF, EWF Marketplace, AI solutions, AgroTech, renewable energy, FinTech automation, digital transformation, business software, Nigeria technology, business solutions, AI Prompt Engineering">
+  <meta name="author" content="eWorldfeeders Global Link">
+  <meta name="robots" content="index, follow">
 
-  <meta name="keywords"
-        content="eWorldfeeders Global Link, EWF, EWF Marketplace, AI solutions, AgroTech, renewable energy, FinTech automation, digital transformation, business software, Nigeria technology, business solutions, AI Prompt Engineering">
-
-  <meta name="author"
-        content="eWorldfeeders Global Link">
-
-  <meta name="robots"
-        content="index, follow">
+  <link rel="canonical" href="https://eworldfeedersgloballink.netlify.app/">
 
   <!-- Open Graph -->
-  <meta property="og:title"
-        content="EWF Solution Marketplace | eWorldfeeders Global Link">
+  <meta property="og:title" content="EWF Solution Marketplace | eWorldfeeders Global Link">
+  <meta property="og:description" content="Practical technology, AI, AgroTech, renewable energy, FinTech automation and business solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eworldfeedersgloballink.netlify.app/">
 
-  <meta property="og:description"
-        content="Practical technology, AI, AgroTech, renewable energy, FinTech automation and business solutions.">
-
-  <meta property="og:type"
-        content="website">
-
-  <meta property="og:url"
-        content="https://eworldfeedersgloballink.netlify.app/">
-
-  <!-- Tailwind -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- =====================================================
-       TAILWIND CONFIG
-  ====================================================== -->
-
+  <!-- TAILWIND CONFIG -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
-
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif']
           },
-
           colors: {
-
             ewf: {
-
               green: '#00843D',
-
               emerald: '#00A651',
-
               dark: '#063B2A',
-
               forest: '#075E3F',
-
               gold: '#D4A017',
-
               goldLight: '#F3C64D',
-
               navy: '#071C17',
-
               cream: '#F8FAF7',
-
               soft: '#EEF7F1'
-
             }
-
           },
-
           boxShadow: {
-
-            'ewf':
-              '0 20px 50px rgba(0,132,61,.12)',
-
-            'ewf-lg':
-              '0 25px 70px rgba(0,0,0,.15)'
-
+            'ewf': '0 20px 50px rgba(0,132,61,.08)',
+            'ewf-lg': '0 25px 70px rgba(0,0,0,.12)',
+            'glow': '0 0 35px rgba(0,166,81,.25)'
           }
-
         }
       }
     }
   </script>
 
-
-  <!-- =====================================================
-       CUSTOM CSS
-  ====================================================== -->
-
+  <!-- CUSTOM STYLES -->
   <style>
-
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       font-family: "Plus Jakarta Sans", sans-serif;
+      background-color: #F8FAF7;
+      color: #063B2A;
+      overflow-x: hidden;
     }
 
     ::selection {
       background: #00843D;
-      color: white;
+      color: #FFFFFF;
+    }
+
+    a, button, input {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a:focus-visible, button:focus-visible, input:focus-visible {
+      outline: 3px solid rgba(243,198,77,.8);
+      outline-offset: 3px;
     }
 
     .ewf-gradient {
-
-      background:
-        radial-gradient(
-          circle at 85% 15%,
-          rgba(0,166,81,.28),
-          transparent 38%
-        ),
-
-        radial-gradient(
-          circle at 10% 90%,
-          rgba(212,160,23,.18),
-          transparent 38%
-        ),
-
-        linear-gradient(
-          135deg,
-          #071C17 0%,
-          #063B2A 55%,
-          #075E3F 100%
-        );
-
+      background: 
+        radial-gradient(circle at 85% 15%, rgba(0,166,81,.22), transparent 45%),
+        radial-gradient(circle at 10% 90%, rgba(212,160,23,.15), transparent 45%),
+        linear-gradient(135deg, #071C17 0%, #063B2A 55%, #075E3F 100%);
     }
 
     .hero-grid {
-
-      background-image:
-
-        linear-gradient(
-          rgba(255,255,255,.045) 1px,
-          transparent 1px
-        ),
-
-        linear-gradient(
-          90deg,
-          rgba(255,255,255,.045) 1px,
-          transparent 1px
-        );
-
-      background-size: 45px 45px;
-
+      background-image: 
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 40px 40px;
     }
 
     .glass-card {
-
-      background: rgba(255,255,255,.96);
-
-      backdrop-filter: blur(14px);
-
-      border:
-        1px solid rgba(0,132,61,.12);
-
+      background: rgba(255,255,255,.98);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(0,132,61,.12);
     }
 
     .card-hover {
-
-      transition:
-        transform .25s ease,
-        box-shadow .25s ease,
-        border-color .25s ease;
-
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .card-hover:hover {
-
-      transform: translateY(-7px);
-
-      box-shadow:
-        0 25px 55px rgba(0,132,61,.14);
-
-      border-color:
-        rgba(0,132,61,.28);
-
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,132,61,.12);
+      border-color: rgba(0,132,61,.3);
     }
 
     .gold-line {
-
-      width: 65px;
-
+      width: 50px;
       height: 4px;
-
       border-radius: 999px;
-
       background: #D4A017;
-
     }
 
     .category-active {
-
       background: #00843D !important;
-
-      color: white !important;
-
+      color: #FFFFFF !important;
       border-color: #00843D !important;
-
+      box-shadow: 0 4px 14px rgba(0,132,61,.3);
     }
 
     .fade-in {
-
-      animation:
-        fadeIn .45s ease both;
-
+      animation: fadeIn .45s ease both;
     }
 
     @keyframes fadeIn {
-
       from {
-
         opacity: 0;
-
-        transform: translateY(8px);
-
+        transform: translateY(12px);
       }
-
       to {
-
         opacity: 1;
-
         transform: translateY(0);
-
       }
-
-    }
-
-    .line-clamp-3 {
-
-      display: -webkit-box;
-
-      -webkit-line-clamp: 3;
-
-      -webkit-box-orient: vertical;
-
-      overflow: hidden;
-
     }
 
     .mobile-menu {
-
       max-height: 0;
-
       overflow: hidden;
-
-      transition:
-        max-height .3s ease;
-
+      transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
     }
 
     .mobile-menu.open {
-
-      max-height: 500px;
-
+      max-height: 600px;
+      transition: max-height 0.35s ease-in-out;
     }
-
   </style>
 
-
-  <!-- =====================================================
-       STRUCTURED DATA
-  ====================================================== -->
-
+  <!-- STRUCTURED DATA -->
   <script type="application/ld+json">
-
   {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -297,3549 +171,1120 @@
       "https://www.facebook.com/eworldfeedersgloballink"
     ]
   }
-
   </script>
-
 </head>
 
+<body class="bg-ewf-cream text-ewf-dark antialiased">
 
-<body class="bg-ewf-cream text-slate-800 antialiased">
-
-
-<!-- =========================================================
-     TOP BAR
-========================================================== -->
-
-<div class="bg-ewf-navy text-white text-xs md:text-sm">
-
-  <div class="max-w-7xl mx-auto px-4 py-2.5">
-
-    <div class="flex flex-col md:flex-row
-                items-center justify-between
-                gap-2">
-
-      <div class="flex items-center gap-2 text-center">
-
-        <span
-          class="bg-ewf-gold text-ewf-navy
-                 px-2 py-0.5 rounded-full
-                 font-extrabold text-[10px]
-                 uppercase tracking-wider">
-
+<!-- TOP BAR -->
+<div class="bg-ewf-navy border-b border-ewf-emerald/10 text-white text-xs md:text-sm py-2">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-center md:text-left">
+        <span class="bg-ewf-gold text-ewf-navy px-2 py-0.5 rounded-full font-black text-[10px] uppercase tracking-wider">
           EWF
-
         </span>
-
-        <span class="text-slate-200">
-
-          Connecting Innovation.
-          Creating Value.
-          Empowering People.
-
+        <span class="text-slate-200 font-medium">
+          Connecting Innovation. Creating Value. Empowering People.
         </span>
-
       </div>
 
-
-      <div class="flex flex-wrap
-                  items-center justify-center
-                  gap-x-4 gap-y-1">
-
-        <a
-          href="https://ewf.edu.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-ewf-goldLight transition">
-
-          <i class="fa-solid fa-graduation-cap text-ewf-gold mr-1"></i>
-
-          EWF Academy
-
+      <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-slate-300 font-medium">
+        <a href="https://ewf.edu.netlify.app/" target="_blank" rel="noopener noreferrer" class="hover:text-ewf-goldLight transition flex items-center gap-1.5">
+          <i class="fa-solid fa-graduation-cap text-ewf-gold"></i> EWF Academy
         </a>
-
-
-        <span class="hidden md:inline text-slate-600">
-          |
-        </span>
-
-
-        <a
-          href="https://ewfpartners.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-ewf-goldLight transition">
-
-          <i class="fa-solid fa-seedling text-ewf-gold mr-1"></i>
-
-          Agro Partners
-
+        <span class="hidden md:inline text-slate-600">|</span>
+        <a href="https://ewfpartners.netlify.app/" target="_blank" rel="noopener noreferrer" class="hover:text-ewf-goldLight transition flex items-center gap-1.5">
+          <i class="fa-solid fa-seedling text-ewf-gold"></i> Agro Partners
         </a>
-
-
-        <span class="hidden md:inline text-slate-600">
-          |
-        </span>
-
-
-        <a
-          href="https://eworldfeedersgloballink.netlify.app/#partner"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-ewf-goldLight transition">
-
-          <i class="fa-solid fa-handshake text-ewf-gold mr-1"></i>
-
-          General Partnership
-
+        <span class="hidden md:inline text-slate-600">|</span>
+        <a href="https://eworldfeedersgloballink.netlify.app/#partner" target="_blank" rel="noopener noreferrer" class="hover:text-ewf-goldLight transition flex items-center gap-1.5">
+          <i class="fa-solid fa-handshake text-ewf-gold"></i> General Partnership
         </a>
-
       </div>
-
     </div>
-
   </div>
-
 </div>
 
-
-
-<!-- =========================================================
-     NAVIGATION
-========================================================== -->
-
-<header
-  class="sticky top-0 z-50
-         bg-white/95 backdrop-blur-lg
-         border-b border-slate-200
-         shadow-sm">
-
+<!-- NAVIGATION -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
     <div class="h-20 flex items-center justify-between">
 
-
       <!-- BRAND -->
-
-      <a
-        href="https://eworldfeedersgloballink.netlify.app"
-        class="flex items-center gap-3">
-
-        <div
-          class="w-11 h-11 rounded-xl
-                 bg-gradient-to-br
-                 from-ewf-green to-ewf-dark
-                 flex items-center justify-center
-                 text-white font-black
-                 shadow-lg">
-
+      <a href="https://eworldfeedersgloballink.netlify.app/" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-ewf-green to-ewf-dark flex items-center justify-center text-white font-black text-lg shadow-md group-hover:scale-105 transition-transform">
           EWF
-
         </div>
-
-
         <div>
-
-          <div
-            class="font-extrabold text-lg md:text-xl
-                   text-ewf-navy leading-none">
-
+          <div class="font-extrabold text-xl text-ewf-navy leading-none tracking-tight">
             eWorldfeeders
-
           </div>
-
-
-          <div
-            class="text-[10px] md:text-xs
-                   font-bold text-ewf-green
-                   uppercase tracking-[.18em] mt-1">
-
+          <div class="text-[10px] font-bold text-ewf-green uppercase tracking-[0.2em] mt-1">
             Global Link
-
           </div>
-
         </div>
-
       </a>
-
 
       <!-- DESKTOP NAV -->
-
-      <nav
-        class="hidden lg:flex items-center
-               gap-6 text-sm
-               font-semibold text-slate-700">
-
-        <a href="#marketplace"
-           class="hover:text-ewf-green transition">
-
-          Marketplace
-
-        </a>
-
-        <a href="#solutions"
-           class="hover:text-ewf-green transition">
-
-          Solutions
-
-        </a>
-
-        <a href="#how-it-works"
-           class="hover:text-ewf-green transition">
-
-          How It Works
-
-        </a>
-
-        <a href="#about"
-           class="hover:text-ewf-green transition">
-
-          About EWF
-
-        </a>
-
-        <a
-          href="https://ewfpartners.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-ewf-green transition">
-
-          Agro Partners
-
-        </a>
-
-        <a href="#contact"
-           class="hover:text-ewf-green transition">
-
-          Contact
-
-        </a>
-
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#marketplace" class="hover:text-ewf-green transition-colors">Marketplace</a>
+        <a href="#solutions" class="hover:text-ewf-green transition-colors">Solutions</a>
+        <a href="#how-it-works" class="hover:text-ewf-green transition-colors">How It Works</a>
+        <a href="#about" class="hover:text-ewf-green transition-colors">About EWF</a>
+        <a href="https://ewfpartners.netlify.app/" target="_blank" rel="noopener noreferrer" class="hover:text-ewf-green transition-colors">Agro Partners</a>
+        <a href="#contact" class="hover:text-ewf-green transition-colors">Contact</a>
       </nav>
-
 
       <!-- DESKTOP CTA -->
-
-      <a
-        href="https://wa.me/2348062331041?text=Hello%20eWorldfeeders%20Global%20Link,%20I%20need%20help%20finding%20a%20solution%20for%20my%20business%20or%20project."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hidden sm:flex
-               bg-ewf-green
-               hover:bg-ewf-forest
-               text-white
-               font-bold text-sm
-               px-4 md:px-5 py-2.5
-               rounded-xl
-               shadow-lg transition
-               items-center gap-2">
-
+      <a href="https://wa.me/2348062331041?text=Hello%20eWorldfeeders%20Global%20Link%2C%20I%20need%20help%20finding%20a%20solution%20for%20my%20business%20or%20project." 
+         target="_blank" rel="noopener noreferrer" 
+         class="hidden sm:inline-flex bg-ewf-green hover:bg-ewf-forest text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all items-center gap-2">
         <i class="fa-brands fa-whatsapp text-lg"></i>
-
         Talk to EWF
-
       </a>
 
-
       <!-- MOBILE MENU BUTTON -->
-
-      <button
-        id="menuButton"
-        type="button"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        class="lg:hidden
-               w-11 h-11 rounded-xl
-               bg-ewf-soft text-ewf-green
-               flex items-center justify-center">
-
-        <i id="menuIcon"
-           class="fa-solid fa-bars text-lg"></i>
-
+      <button id="menuButton" type="button" aria-label="Open navigation menu" aria-expanded="false" 
+              class="lg:hidden w-11 h-11 rounded-xl bg-ewf-soft text-ewf-green hover:bg-ewf-green/10 flex items-center justify-center transition">
+        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
       </button>
-
     </div>
-
 
     <!-- MOBILE MENU -->
-
-    <div id="mobileMenu"
-         class="mobile-menu lg:hidden">
-
-      <nav class="pb-5 pt-2 space-y-1">
-
-        <a href="#marketplace"
-           class="mobile-link block px-4 py-3 rounded-lg
-                  hover:bg-ewf-soft font-semibold">
-
-          Marketplace
-
-        </a>
-
-        <a href="#solutions"
-           class="mobile-link block px-4 py-3 rounded-lg
-                  hover:bg-ewf-soft font-semibold">
-
-          Solutions
-
-        </a>
-
-        <a href="#how-it-works"
-           class="mobile-link block px-4 py-3 rounded-lg
-                  hover:bg-ewf-soft font-semibold">
-
-          How It Works
-
-        </a>
-
-        <a href="#about"
-           class="mobile-link block px-4 py-3 rounded-lg
-                  hover:bg-ewf-soft font-semibold">
-
-          About EWF
-
-        </a>
-
-        <a
-          href="https://ewfpartners.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="block px-4 py-3 rounded-lg
-                 hover:bg-ewf-soft font-semibold">
-
-          Agro Partners
-
-        </a>
-
-        <a href="#contact"
-           class="mobile-link block px-4 py-3 rounded-lg
-                  hover:bg-ewf-soft font-semibold">
-
-          Contact
-
-        </a>
-
-        <a
-          href="https://wa.me/2348062331041?text=Hello%20eWorldfeeders%20Global%20Link,%20I%20need%20help%20finding%20a%20solution."
-          target="_blank"
-          rel="noopener noreferrer"
-          class="mt-3 block text-center
-                 bg-ewf-green text-white
-                 font-bold px-5 py-3
-                 rounded-xl">
-
-          <i class="fa-brands fa-whatsapp mr-2"></i>
-
+    <div id="mobileMenu" class="mobile-menu lg:hidden">
+      <nav class="pb-6 pt-2 space-y-1">
+        <a href="#marketplace" class="mobile-link block px-4 py-3 rounded-xl hover:bg-ewf-soft text-slate-800 font-semibold transition">Marketplace</a>
+        <a href="#solutions" class="mobile-link block px-4 py-3 rounded-xl hover:bg-ewf-soft text-slate-800 font-semibold transition">Solutions</a>
+        <a href="#how-it-works" class="mobile-link block px-4 py-3 rounded-xl hover:bg-ewf-soft text-slate-800 font-semibold transition">How It Works</a>
+        <a href="#about" class="mobile-link block px-4 py-3 rounded-xl hover:bg-ewf-soft text-slate-800 font-semibold transition">About EWF</a>
+        <a href="https://ewfpartners.netlify.app/" target="_blank" rel="noopener noreferrer" class="block px-4 py-3 rounded-xl hover:bg-ewf-soft text-slate-800 font-semibold transition">Agro Partners</a>
+        <a href="#contact" class="mobile-link block px-4 py-3 rounded-xl hover:bg-ewf-soft text-slate-800 font-semibold transition">Contact</a>
+        <a href="https://wa.me/2348062331041?text=Hello%20eWorldfeeders%20Global%20Link%2C%20I%20need%20help%20finding%20a%20solution." 
+           target="_blank" rel="noopener noreferrer" 
+           class="mt-3 flex items-center justify-center gap-2 bg-ewf-green text-white font-bold px-5 py-3.5 rounded-xl shadow-md">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
           Talk to EWF
-
         </a>
-
       </nav>
-
     </div>
-
   </div>
-
 </header>
 
+<!-- HERO -->
+<section class="ewf-gradient hero-grid text-white relative overflow-hidden">
+  <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-ewf-emerald/20 blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-ewf-gold/15 blur-3xl pointer-events-none"></div>
 
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative z-10">
+    <div class="max-w-4xl mx-auto text-center">
 
-<!-- =========================================================
-     HERO
-========================================================== -->
-
-<section
-  class="ewf-gradient hero-grid
-         text-white relative overflow-hidden">
-
-  <div
-    class="absolute -top-40 -right-40
-           w-96 h-96 rounded-full
-           bg-ewf-emerald/20 blur-3xl">
-  </div>
-
-  <div
-    class="absolute -bottom-40 -left-40
-           w-96 h-96 rounded-full
-           bg-ewf-gold/10 blur-3xl">
-  </div>
-
-
-  <div
-    class="max-w-7xl mx-auto
-           px-4 sm:px-6 lg:px-8
-           py-20 md:py-28
-           relative z-10">
-
-    <div class="max-w-5xl mx-auto text-center">
-
-
-      <div
-        class="inline-flex items-center gap-2
-               px-4 py-2 rounded-full
-               bg-white border
-               border-ewf-green
-               text-ewf-dark
-               font-extrabold text-xs
-               uppercase tracking-wider
-               mb-7 shadow-md">
-
-        <i class="fa-solid fa-lightbulb text-ewf-green"></i>
-
-        EWF SOLUTION MARKETPLACE
-
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-ewf-goldLight font-bold text-xs uppercase tracking-wider mb-8 shadow-inner">
+        <i class="fa-solid fa-lightbulb text-ewf-gold"></i>
+        EWF Solution Marketplace
       </div>
 
-
-      <h1
-        class="text-4xl sm:text-5xl
-               lg:text-6xl
-               font-extrabold
-               leading-tight mb-7">
-
-        Practical Solutions
-        for Real-World Problems
-
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.15] mb-6 tracking-tight text-white">
+        Practical Solutions for <span class="text-transparent bg-clip-text bg-gradient-to-r from-ewf-goldLight via-amber-300 to-white">Real-World Problems</span>
       </h1>
 
-
-      <p
-        class="text-lg md:text-xl
-               text-slate-100
-               leading-relaxed
-               max-w-3xl mx-auto mb-9">
-
-        Explore technology, AI, AgroTech,
-        renewable energy, FinTech automation,
-        digital transformation and other
-        practical solutions coordinated by
-        <strong>eWorldfeeders Global Link.</strong>
-
+      <p class="text-lg md:text-xl text-slate-200 leading-relaxed max-w-3xl mx-auto mb-10 font-normal">
+        Explore technology, AI, AgroTech, renewable energy, FinTech automation, digital transformation and other practical solutions coordinated by 
+        <strong class="text-ewf-goldLight font-semibold">eWorldfeeders Global Link.</strong>
       </p>
 
-
-      <div
-        class="flex flex-wrap
-               justify-center gap-4">
-
-        <a
-          href="#marketplace"
-          class="bg-ewf-gold
-                 hover:bg-ewf-goldLight
-                 text-ewf-navy
-                 font-extrabold
-                 px-7 py-3.5
-                 rounded-xl
-                 shadow-lg transition">
-
-          <i class="fa-solid fa-store mr-2"></i>
-
-          Explore Marketplace
-
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#marketplace" class="bg-ewf-gold hover:bg-ewf-goldLight text-ewf-navy font-extrabold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+          <i class="fa-solid fa-store"></i> Explore Marketplace
         </a>
-
-
-        <a
-          href="#contact"
-          class="bg-ewf-green
-                 hover:bg-ewf-forest
-                 text-white
-                 font-bold
-                 px-7 py-3.5
-                 rounded-xl
-                 shadow-lg transition">
-
-          <i class="fa-solid fa-comments mr-2"></i>
-
-          Tell Us Your Problem
-
+        <a href="#contact" class="bg-ewf-green hover:bg-ewf-forest text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+          <i class="fa-solid fa-comments"></i> Tell Us Your Problem
         </a>
-
-
-        <a
-          href="https://ewfpartners.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="border border-white/30
-                 bg-white/10
-                 hover:bg-white/20
-                 text-white
-                 font-bold
-                 px-7 py-3.5
-                 rounded-xl
-                 backdrop-blur-sm">
-
-          <i class="fa-solid fa-seedling mr-2"></i>
-
-          Agro Partners
-
+        <a href="https://ewfpartners.netlify.app/" target="_blank" rel="noopener noreferrer" class="border border-white/20 bg-white/5 hover:bg-white/15 text-white font-bold px-8 py-4 rounded-xl backdrop-blur-md transition-all flex items-center gap-2">
+          <i class="fa-solid fa-seedling text-ewf-gold"></i> Agro Partners
         </a>
-
       </div>
-
 
       <!-- HERO TRUST POINTS -->
-
-      <div
-        class="mt-12
-               grid grid-cols-2
-               md:grid-cols-4
-               gap-3
-               max-w-4xl mx-auto">
-
-        <div
-          class="bg-white/10
-                 border border-white/10
-                 rounded-xl p-4">
-
-          <i class="fa-solid fa-code text-ewf-gold text-xl"></i>
-
-          <p class="text-xs font-bold mt-2">
-            Digital Solutions
-          </p>
-
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-4 text-center hover:border-ewf-gold/40 transition">
+          <i class="fa-solid fa-code text-ewf-gold text-2xl mb-2"></i>
+          <p class="text-xs font-bold text-slate-200">Digital Solutions</p>
         </div>
-
-
-        <div
-          class="bg-white/10
-                 border border-white/10
-                 rounded-xl p-4">
-
-          <i class="fa-solid fa-robot text-ewf-gold text-xl"></i>
-
-          <p class="text-xs font-bold mt-2">
-            AI & Automation
-          </p>
-
+        <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-4 text-center hover:border-ewf-gold/40 transition">
+          <i class="fa-solid fa-robot text-ewf-gold text-2xl mb-2"></i>
+          <p class="text-xs font-bold text-slate-200">AI & Automation</p>
         </div>
-
-
-        <div
-          class="bg-white/10
-                 border border-white/10
-                 rounded-xl p-4">
-
-          <i class="fa-solid fa-seedling text-ewf-gold text-xl"></i>
-
-          <p class="text-xs font-bold mt-2">
-            AgroTech
-          </p>
-
+        <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-4 text-center hover:border-ewf-gold/40 transition">
+          <i class="fa-solid fa-seedling text-ewf-gold text-2xl mb-2"></i>
+          <p class="text-xs font-bold text-slate-200">AgroTech</p>
         </div>
-
-
-        <div
-          class="bg-white/10
-                 border border-white/10
-                 rounded-xl p-4">
-
-          <i class="fa-solid fa-solar-panel text-ewf-gold text-xl"></i>
-
-          <p class="text-xs font-bold mt-2">
-            Clean Energy
-          </p>
-
+        <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-4 text-center hover:border-ewf-gold/40 transition">
+          <i class="fa-solid fa-solar-panel text-ewf-gold text-2xl mb-2"></i>
+          <p class="text-xs font-bold text-slate-200">Clean Energy</p>
         </div>
-
       </div>
 
     </div>
-
   </div>
-
 </section>
 
-
-
-<!-- =========================================================
-     MARKETPLACE INTRO / STATS
-========================================================== -->
-
-<section class="bg-white border-b border-slate-200">
-
-  <div
-    class="max-w-7xl mx-auto
-           px-4 sm:px-6 lg:px-8
-           py-8">
-
-    <div
-      class="grid grid-cols-2
-             md:grid-cols-4
-             gap-6 text-center">
-
-      <div>
-
-        <div
-          id="solutionCount"
-          class="text-3xl font-extrabold
-                 text-ewf-green">
-
-          0
-
-        </div>
-
-        <p class="text-xs font-semibold
-                  text-slate-600 mt-1">
-
-          Solution Options
-
-        </p>
-
+<!-- STATS BAR -->
+<section class="bg-white border-b border-slate-200/80 shadow-sm py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x-0 md:divide-x divide-slate-100">
+      <div class="p-2">
+        <div id="solutionCount" class="text-3xl lg:text-4xl font-extrabold text-ewf-green tracking-tight">0</div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mt-1">Solution Options</p>
       </div>
-
-
-      <div>
-
-        <div
-          class="text-3xl font-extrabold
-                 text-ewf-green">
-
-          7+
-
-        </div>
-
-        <p class="text-xs font-semibold
-                  text-slate-600 mt-1">
-
-          Strategic Areas
-
-        </p>
-
+      <div class="p-2">
+        <div class="text-3xl lg:text-4xl font-extrabold text-ewf-green tracking-tight">7+</div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mt-1">Strategic Areas</p>
       </div>
-
-
-      <div>
-
-        <div
-          class="text-3xl font-extrabold
-                 text-ewf-green">
-
-          Project
-
-        </div>
-
-        <p class="text-xs font-semibold
-                  text-slate-600 mt-1">
-
-          Based Delivery
-
-        </p>
-
+      <div class="p-2">
+        <div class="text-3xl lg:text-4xl font-extrabold text-ewf-green tracking-tight">Project</div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mt-1">Based Delivery</p>
       </div>
-
-
-      <div>
-
-        <div
-          class="text-3xl font-extrabold
-                 text-ewf-green">
-
-          WhatsApp
-
-        </div>
-
-        <p class="text-xs font-semibold
-                  text-slate-600 mt-1">
-
-          Direct Consultation
-
-        </p>
-
+      <div class="p-2">
+        <div class="text-3xl lg:text-4xl font-extrabold text-ewf-green tracking-tight">WhatsApp</div>
+        <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mt-1">Direct Consultation</p>
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-
-
-<!-- =========================================================
-     ABOUT
-========================================================== -->
-
-<section id="about"
-         class="py-20 bg-ewf-cream">
-
-  <div
-    class="max-w-7xl mx-auto
-           px-4 sm:px-6 lg:px-8">
-
-    <div
-      class="grid lg:grid-cols-2
-             gap-14 items-center">
-
+<!-- ABOUT -->
+<section id="about" class="py-24 bg-ewf-cream">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
 
       <div>
-
-        <span
-          class="text-ewf-green
-                 font-extrabold text-xs
-                 uppercase tracking-widest">
-
+        <span class="text-ewf-green font-extrabold text-xs uppercase tracking-widest bg-ewf-soft px-3 py-1.5 rounded-md border border-ewf-green/20">
           About EWF
-
         </span>
 
-
-        <h2
-          class="text-3xl md:text-4xl
-                 font-extrabold
-                 text-ewf-navy
-                 mt-3 mb-5">
-
-          Connecting Innovation.
-          Creating Value.
-          Empowering People.
-
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-ewf-navy mt-4 mb-4 leading-tight">
+          Connecting Innovation.<br>Creating Value. Empowering People.
         </h2>
-
 
         <div class="gold-line mb-6"></div>
 
-
-        <p
-          class="text-slate-700
-                 leading-relaxed mb-5">
-
-          <strong>eWorldfeeders Global Link</strong>
-          is a Nigerian technology-driven enterprise
-          building and coordinating practical solutions
-          across technology, agriculture, renewable energy,
-          business transformation and human development.
-
+        <p class="text-slate-700 leading-relaxed mb-4 text-base">
+          <strong class="text-ewf-navy font-bold">eWorldfeeders Global Link</strong> is a Nigerian technology-driven enterprise building and coordinating practical solutions across technology, agriculture, renewable energy, business transformation and human development.
         </p>
 
-
-        <p
-          class="text-slate-700
-                 leading-relaxed mb-5">
-
-          Our marketplace brings together solution areas,
-          technical capabilities and strategic partnerships
-          so individuals, businesses, organizations and
-          communities can move from a real-world problem
-          toward a practical solution.
-
+        <p class="text-slate-700 leading-relaxed mb-4 text-base">
+          Our marketplace brings together solution areas, technical capabilities and strategic partnerships so individuals, businesses, organizations and communities can move from a real-world problem toward a practical solution.
         </p>
 
-
-        <p
-          class="text-slate-700
-                 leading-relaxed">
-
-          For specialized ICT implementation,
-          EWF collaborates with
-          <strong class="text-ewf-navy">
-            eMicro Multipurpose ICT Firm (EMIF)
-          </strong>.
-
+        <p class="text-slate-700 leading-relaxed mb-6 text-base">
+          For specialized ICT implementation, EWF collaborates with <strong class="text-ewf-green font-bold">eMicro Multipurpose ICT Firm (EMIF)</strong>.
         </p>
 
-
-        <div
-          class="mt-7 inline-flex
-                 items-center gap-3
-                 bg-white
-                 border border-ewf-green/20
-                 px-5 py-3.5
-                 rounded-xl shadow-sm">
-
-          <i
-            class="fa-solid fa-heart
-                   text-ewf-gold text-lg">
-          </i>
-
-          <span
-            class="font-extrabold
-                   text-ewf-dark">
-
-            Living For Humanity
-            Is Our Number One
-
+        <div class="inline-flex items-center gap-3.5 bg-white border border-ewf-green/20 px-6 py-4 rounded-2xl shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-ewf-gold shrink-0">
+            <i class="fa-solid fa-heart text-lg"></i>
+          </div>
+          <span class="font-extrabold text-ewf-navy text-sm md:text-base">
+            Living For Humanity Is Our Number One
           </span>
-
         </div>
-
       </div>
-
 
       <!-- VISION / MISSION -->
-
-      <div
-        class="grid sm:grid-cols-2
-               gap-5">
-
-
-        <div
-          class="glass-card
-                 rounded-2xl p-6
-                 card-hover">
-
-          <div
-            class="w-12 h-12 rounded-xl
-                   bg-ewf-soft
-                   text-ewf-green
-                   flex items-center
-                   justify-center mb-5">
-
-            <i class="fa-solid fa-eye text-xl"></i>
-
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="glass-card rounded-2xl p-7 card-hover">
+          <div class="w-12 h-12 rounded-xl bg-ewf-soft text-ewf-green flex items-center justify-center mb-5 text-xl font-bold">
+            <i class="fa-solid fa-eye"></i>
           </div>
-
-
-          <h3
-            class="font-extrabold text-xl
-                   text-ewf-navy mb-3">
-
-            Our Vision
-
-          </h3>
-
-
-          <p
-            class="text-sm
-                   text-slate-700
-                   leading-relaxed">
-
-            To contribute to a thriving,
-            zero-hunger world powered by
-            precision agriculture, clean energy
-            and universal technical literacy.
-
+          <h3 class="font-extrabold text-xl text-ewf-navy mb-2">Our Vision</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            To contribute to a thriving, zero-hunger world powered by precision agriculture, clean energy and universal technical literacy.
           </p>
-
         </div>
 
-
-        <div
-          class="glass-card
-                 rounded-2xl p-6
-                 card-hover">
-
-          <div
-            class="w-12 h-12 rounded-xl
-                   bg-amber-100
-                   text-ewf-dark
-                   flex items-center
-                   justify-center mb-5">
-
-            <i class="fa-solid fa-bullseye text-xl"></i>
-
+        <div class="glass-card rounded-2xl p-7 card-hover">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5 text-xl font-bold">
+            <i class="fa-solid fa-bullseye"></i>
           </div>
-
-
-          <h3
-            class="font-extrabold text-xl
-                   text-ewf-navy mb-3">
-
-            Our Mission
-
-          </h3>
-
-
-          <p
-            class="text-sm
-                   text-slate-700
-                   leading-relaxed">
-
-            To develop practical technology
-            and AgroTech solutions, build
-            technical capacity and create
-            collaborative frameworks that
-            support sustainable development.
-
+          <h3 class="font-extrabold text-xl text-ewf-navy mb-2">Our Mission</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            To develop practical technology and AgroTech solutions, build technical capacity and create collaborative frameworks that support sustainable development.
           </p>
-
         </div>
 
-
-        <div
-          class="sm:col-span-2
-                 bg-ewf-navy
-                 rounded-2xl p-7
-                 text-white shadow-lg">
-
-          <div class="flex gap-4">
-
-            <div
-              class="w-11 h-11
-                     rounded-xl
-                     bg-ewf-green
-                     flex-shrink-0
-                     flex items-center
-                     justify-center">
-
+        <div class="sm:col-span-2 bg-ewf-navy rounded-2xl p-8 text-white shadow-xl relative overflow-hidden">
+          <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-ewf-green/20 rounded-full blur-2xl"></div>
+          <div class="flex flex-col sm:flex-row gap-5 relative z-10">
+            <div class="w-12 h-12 rounded-xl bg-ewf-green flex-shrink-0 flex items-center justify-center text-white text-xl">
               <i class="fa-solid fa-people-group"></i>
-
             </div>
-
-
             <div>
-
-              <h3
-                class="font-extrabold
-                       text-lg mb-2">
-
-                Our Approach
-
-              </h3>
-
-
-              <p
-                class="text-sm
-                       text-slate-200
-                       leading-relaxed">
-
-                We coordinate people, technology,
-                knowledge and strategic partnerships
-                around real problems. The objective is
-                not simply to sell technology, but to
-                create solutions that can be useful,
-                sustainable and scalable.
-
+              <h3 class="font-extrabold text-lg text-white mb-2">Our Approach</h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                We coordinate people, technology, knowledge and strategic partnerships around real problems. The objective is not simply to sell technology, but to create solutions that can be useful, sustainable and scalable.
               </p>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
 
     </div>
-
   </div>
-
 </section>
 
-
-
-<!-- =========================================================
-     SOLUTION AREAS
-========================================================== -->
-
-<section id="solutions"
-         class="py-20 bg-white">
-
-  <div
-    class="max-w-7xl mx-auto
-           px-4 sm:px-6 lg:px-8">
-
-    <div
-      class="text-center
-             max-w-3xl mx-auto
-             mb-12">
-
-      <span
-        class="text-ewf-green
-               font-extrabold text-xs
-               uppercase tracking-widest">
-
+<!-- SOLUTION AREAS -->
+<section id="solutions" class="py-24 bg-white border-t border-slate-200/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-ewf-green font-extrabold text-xs uppercase tracking-widest bg-ewf-soft px-3 py-1.5 rounded-md border border-ewf-green/20">
         What EWF Works On
-
       </span>
-
-
-      <h2
-        class="text-3xl md:text-4xl
-               font-extrabold
-               text-ewf-navy mt-3">
-
+      <h2 class="text-3xl md:text-4xl font-extrabold text-ewf-navy mt-4">
         Strategic Solution Areas
-
       </h2>
-
-
-      <p
-        class="text-slate-600
-               mt-4 leading-relaxed">
-
-        Explore the major areas where EWF
-        develops, coordinates or facilitates
-        practical solutions and partnerships.
-
+      <p class="text-slate-600 mt-4 leading-relaxed">
+        Explore the major areas where EWF develops, coordinates or facilitates practical solutions and partnerships.
       </p>
-
     </div>
 
-
-    <div
-      class="grid sm:grid-cols-2
-             lg:grid-cols-4
-             gap-6">
-
-
-      <!-- 1 -->
-
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
       <div class="glass-card rounded-2xl p-6 card-hover">
-
-        <div
-          class="w-12 h-12 rounded-xl
-                 bg-ewf-soft
-                 text-ewf-green
-                 flex items-center
-                 justify-center mb-5">
-
-          <i class="fa-solid fa-code text-xl"></i>
-
+        <div class="w-12 h-12 rounded-xl bg-ewf-soft text-ewf-green flex items-center justify-center mb-5 text-xl">
+          <i class="fa-solid fa-code"></i>
         </div>
-
-        <h3
-          class="font-extrabold text-lg
-                 text-ewf-navy mb-2">
-
-          Technology & Software
-
-        </h3>
-
-        <p
-          class="text-sm text-slate-700
-                 leading-relaxed">
-
-          Websites, business software,
-          databases, digital systems,
-          automation and ICT solutions.
-
+        <h3 class="font-extrabold text-lg text-ewf-navy mb-2">Technology & Software</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Websites, business software, databases, digital systems, automation and ICT solutions.
         </p>
-
       </div>
 
-
-      <!-- 2 -->
-
       <div class="glass-card rounded-2xl p-6 card-hover">
-
-        <div
-          class="w-12 h-12 rounded-xl
-                 bg-ewf-soft
-                 text-ewf-green
-                 flex items-center
-                 justify-center mb-5">
-
-          <i class="fa-solid fa-robot text-xl"></i>
-
+        <div class="w-12 h-12 rounded-xl bg-ewf-soft text-ewf-green flex items-center justify-center mb-5 text-xl">
+          <i class="fa-solid fa-robot"></i>
         </div>
-
-        <h3
-          class="font-extrabold text-lg
-                 text-ewf-navy mb-2">
-
-          AI & Automation
-
-        </h3>
-
-        <p
-          class="text-sm text-slate-700
-                 leading-relaxed">
-
-          Prompt engineering, AI training,
-          workflow automation and practical
-          AI adoption.
-
+        <h3 class="font-extrabold text-lg text-ewf-navy mb-2">AI & Automation</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Prompt engineering, AI training, workflow automation and practical AI adoption.
         </p>
-
       </div>
 
-
-      <!-- 3 -->
-
       <div class="glass-card rounded-2xl p-6 card-hover">
-
-        <div
-          class="w-12 h-12 rounded-xl
-                 bg-ewf-soft
-                 text-ewf-green
-                 flex items-center
-                 justify-center mb-5">
-
-          <i class="fa-solid fa-seedling text-xl"></i>
-
+        <div class="w-12 h-12 rounded-xl bg-ewf-soft text-ewf-green flex items-center justify-center mb-5 text-xl">
+          <i class="fa-solid fa-seedling"></i>
         </div>
-
-        <h3
-          class="font-extrabold text-lg
-                 text-ewf-navy mb-2">
-
-          AgroTech
-
-        </h3>
-
-        <p
-          class="text-sm text-slate-700
-                 leading-relaxed">
-
-          Farm digitization, smart agriculture,
-          market linkages and agricultural
-          development partnerships.
-
+        <h3 class="font-extrabold text-lg text-ewf-navy mb-2">AgroTech</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Farm digitization, smart agriculture, market linkages and agricultural development partnerships.
         </p>
-
       </div>
 
-
-      <!-- 4 -->
-
       <div class="glass-card rounded-2xl p-6 card-hover">
-
-        <div
-          class="w-12 h-12 rounded-xl
-                 bg-amber-100
-                 text-ewf-dark
-                 flex items-center
-                 justify-center mb-5">
-
-          <i class="fa-solid fa-solar-panel text-xl"></i>
-
+        <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5 text-xl">
+          <i class="fa-solid fa-solar-panel"></i>
         </div>
-
-        <h3
-          class="font-extrabold text-lg
-                 text-ewf-navy mb-2">
-
-          Renewable Energy
-
-        </h3>
-
-        <p
-          class="text-sm text-slate-700
-                 leading-relaxed">
-
-          Solar assessment, system design,
-          clean-energy projects and
-          implementation partnerships.
-
+        <h3 class="font-extrabold text-lg text-ewf-navy mb-2">Renewable Energy</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Solar assessment, system design, clean-energy projects and implementation partnerships.
         </p>
-
       </div>
 
-
-      <!-- 5 -->
-
       <div class="glass-card rounded-2xl p-6 card-hover">
-
-        <div
-          class="w-12 h-12 rounded-xl
-                 bg-ewf-soft
-                 text-ewf-green
-                 flex items-center
-                 justify-center mb-5">
-
-          <i class="fa-solid fa-coins text-xl"></i>
-
+        <div class="w-12 h-12 rounded-xl bg-ewf-soft text-ewf-green flex items-center justify-center mb-5 text-xl">
+          <i class="fa-solid fa-coins"></i>
         </div>
-
-        <h3
-          class="font-extrabold text-lg
-                 text-ewf-navy mb-2">
-
-          FinTech Automation
-
-        </h3>
-
-        <p
-          class="text-sm text-slate-700
-                 leading-relaxed">
-
-          Digital tools for cooperative,
-          organizational financial records,
-          savings, loans, shares and reporting.
-
+        <h3 class="font-extrabold text-lg text-ewf-navy mb-2">FinTech Automation</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Digital tools for cooperative, organizational financial records, savings, loans, shares and reporting.
         </p>
-
       </div>
 
-
-      <!-- 6 -->
-
       <div class="glass-card rounded-2xl p-6 card-hover">
-
-        <div
-          class="w-12 h-12 rounded-xl
-                 bg-ewf-soft
-                 text-ewf-green
-                 flex items-center
-                 justify-center mb-5">
-
-          <i class="fa-solid fa-chart-line text-xl"></i>
-
+        <div class="w-12 h-12 rounded-xl bg-ewf-soft text-ewf-green flex items-center justify-center mb-5 text-xl">
+          <i class="fa-solid fa-chart-line"></i>
         </div>
-
-        <h3
-          class="font-extrabold text-lg
-                 text-ewf-navy mb-2">
-
-          Business Transformation
-
-        </h3>
-
-        <p
-          class="text-sm text-slate-700
-                 leading-relaxed">
-
-          Digital presence, branding,
-          process improvement and
-          business automation.
-
+        <h3 class="font-extrabold text-lg text-ewf-navy mb-2">Business Transformation</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Digital presence, branding, process improvement and business automation.
         </p>
-
       </div>
 
-
-      <!-- 7 -->
-
       <div class="glass-card rounded-2xl p-6 card-hover">
-
-        <div
-          class="w-12 h-12 rounded-xl
-                 bg-ewf-soft
-                 text-ewf-green
-                 flex items-center
-                 justify-center mb-5">
-
-          <i class="fa-solid fa-link text-xl"></i>
-
+        <div class="w-12 h-12 rounded-xl bg-ewf-soft text-ewf-green flex items-center justify-center mb-5 text-xl">
+          <i class="fa-solid fa-link"></i>
         </div>
-
-        <h3
-          class="font-extrabold text-lg
-                 text-ewf-navy mb-2">
-
-          Web3 & Digital Assets
-
-        </h3>
-
-        <p
-          class="text-sm text-slate-700
-                 leading-relaxed">
-
-          Exploration of digital asset,
-          Web3 and technology-enabled
-          ecosystem opportunities.
-
+        <h3 class="font-extrabold text-lg text-ewf-navy mb-2">Web3 & Digital Assets</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Exploration of digital asset, Web3 and technology-enabled ecosystem opportunities.
         </p>
-
       </div>
 
-
-      <!-- 8 -->
-
       <div class="glass-card rounded-2xl p-6 card-hover">
-
-        <div
-          class="w-12 h-12 rounded-xl
-                 bg-ewf-soft
-                 text-ewf-green
-                 flex items-center
-                 justify-center mb-5">
-
-          <i class="fa-solid fa-graduation-cap text-xl"></i>
-
+        <div class="w-12 h-12 rounded-xl bg-ewf-soft text-ewf-green flex items-center justify-center mb-5 text-xl">
+          <i class="fa-solid fa-graduation-cap"></i>
         </div>
-
-        <h3
-          class="font-extrabold text-lg
-                 text-ewf-navy mb-2">
-
-          Human Development
-
-        </h3>
-
-        <p
-          class="text-sm text-slate-700
-                 leading-relaxed">
-
-          Practical digital education,
-          AI Prompt Engineering training,
-          technical literacy and opportunity.
-
+        <h3 class="font-extrabold text-lg text-ewf-navy mb-2">Human Development</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Practical digital education, AI Prompt Engineering training, technical literacy and opportunity.
         </p>
-
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-
-
-<!-- =========================================================
-     MARKETPLACE
-========================================================== -->
-
-<section id="marketplace"
-         class="py-20 bg-ewf-cream">
-
-  <div
-    class="max-w-7xl mx-auto
-           px-4 sm:px-6 lg:px-8">
-
+<!-- MARKETPLACE -->
+<section id="marketplace" class="py-24 bg-ewf-cream border-t border-slate-200/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <!-- HEADER -->
-
-    <div class="text-center mb-10">
-
-      <span
-        class="text-ewf-green
-               font-extrabold text-xs
-               uppercase tracking-widest">
-
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-ewf-green font-extrabold text-xs uppercase tracking-widest bg-ewf-soft px-3 py-1.5 rounded-md border border-ewf-green/20">
         EWF Solution Marketplace
-
       </span>
-
-
-      <h2
-        class="text-3xl md:text-4xl
-               font-extrabold
-               text-ewf-navy mt-3">
-
-        Find the Right Solution
-        for Your Next Project
-
+      <h2 class="text-3xl md:text-4xl font-extrabold text-ewf-navy mt-4">
+        Find the Right Solution for Your Next Project
       </h2>
-
-
-      <p
-        class="text-slate-600
-               max-w-2xl mx-auto
-               mt-4 leading-relaxed">
-
-        Search our solution areas or tell us
-        what you are trying to achieve.
-        EWF can help identify the appropriate
-        service, technical requirement or
-        collaboration pathway.
-
+      <p class="text-slate-600 mt-4 leading-relaxed">
+        Search our solution areas or tell us what you are trying to achieve. EWF can help identify the appropriate service, technical requirement or collaboration pathway.
       </p>
-
     </div>
 
-
-    <!-- SEARCH -->
-
-    <div
-      class="max-w-2xl mx-auto mb-8">
-
-      <div
-        class="relative">
-
-        <i
-          class="fa-solid fa-magnifying-glass
-                 absolute left-5 top-1/2
-                 -translate-y-1/2
-                 text-slate-400">
-        </i>
-
-
-        <input
-          id="searchInput"
-          type="search"
-          placeholder="Search solutions, e.g. POS, AI, solar, website..."
-          aria-label="Search EWF solutions"
-          class="w-full
-                 bg-white
-                 border border-slate-200
-                 rounded-2xl
-                 pl-12 pr-5 py-4
-                 outline-none
-                 focus:ring-4
-                 focus:ring-ewf-green/10
-                 focus:border-ewf-green
-                 shadow-sm">
-
+    <!-- SEARCH INPUT -->
+    <div class="max-w-2xl mx-auto mb-8">
+      <div class="relative shadow-sm rounded-2xl">
+        <i class="fa-solid fa-magnifying-glass absolute left-5 top-1/2 -translate-y-1/2 text-ewf-green text-lg"></i>
+        <input id="searchInput" type="search" 
+               placeholder="Search solutions, e.g. POS, AI, solar, website..." 
+               aria-label="Search EWF solutions" 
+               class="w-full bg-white text-slate-800 placeholder:text-slate-400 border border-slate-200 rounded-2xl pl-13 pr-5 py-4 outline-none focus:ring-4 focus:ring-ewf-green/15 focus:border-ewf-green transition-all shadow-sm text-base">
       </div>
-
     </div>
 
-
-    <!-- FILTER BUTTONS -->
-
-    <div
-      id="category-filters"
-      class="flex flex-wrap
-             justify-center
-             gap-2 mb-10">
-
-
-      <button
-        data-category="all"
-        class="cat-btn category-active
-               px-5 py-2.5
-               rounded-xl
-               font-bold text-sm
-               border">
-
+    <!-- CATEGORY FILTERS -->
+    <div id="category-filters" class="flex flex-wrap justify-center gap-2 mb-10">
+      <button data-category="all" class="cat-btn category-active px-5 py-2.5 rounded-xl font-bold text-sm border transition">
         All Solutions
-
       </button>
-
-
-      <button
-        data-category="technology"
-        class="cat-btn bg-white
-               text-slate-700
-               border-slate-200
-               px-5 py-2.5
-               rounded-xl
-               font-bold text-sm">
-
+      <button data-category="technology" class="cat-btn bg-white text-slate-700 hover:text-ewf-green border border-slate-200 px-5 py-2.5 rounded-xl font-bold text-sm transition">
         Technology
-
       </button>
-
-
-      <button
-        data-category="ai"
-        class="cat-btn bg-white
-               text-slate-700
-               border-slate-200
-               px-5 py-2.5
-               rounded-xl
-               font-bold text-sm">
-
+      <button data-category="ai" class="cat-btn bg-white text-slate-700 hover:text-ewf-green border border-slate-200 px-5 py-2.5 rounded-xl font-bold text-sm transition">
         AI
-
       </button>
-
-
-      <button
-        data-category="agriculture"
-        class="cat-btn bg-white
-               text-slate-700
-               border-slate-200
-               px-5 py-2.5
-               rounded-xl
-               font-bold text-sm">
-
+      <button data-category="agriculture" class="cat-btn bg-white text-slate-700 hover:text-ewf-green border border-slate-200 px-5 py-2.5 rounded-xl font-bold text-sm transition">
         AgroTech
-
       </button>
-
-
-      <button
-        data-category="energy"
-        class="cat-btn bg-white
-               text-slate-700
-               border-slate-200
-               px-5 py-2.5
-               rounded-xl
-               font-bold text-sm">
-
+      <button data-category="energy" class="cat-btn bg-white text-slate-700 hover:text-ewf-green border border-slate-200 px-5 py-2.5 rounded-xl font-bold text-sm transition">
         Energy
-
       </button>
-
-
-      <button
-        data-category="fintech"
-        class="cat-btn bg-white
-               text-slate-700
-               border-slate-200
-               px-5 py-2.5
-               rounded-xl
-               font-bold text-sm">
-
+      <button data-category="fintech" class="cat-btn bg-white text-slate-700 hover:text-ewf-green border border-slate-200 px-5 py-2.5 rounded-xl font-bold text-sm transition">
         FinTech
-
       </button>
-
-
-      <button
-        data-category="business"
-        class="cat-btn bg-white
-               text-slate-700
-               border-slate-200
-               px-5 py-2.5
-               rounded-xl
-               font-bold text-sm">
-
+      <button data-category="business" class="cat-btn bg-white text-slate-700 hover:text-ewf-green border border-slate-200 px-5 py-2.5 rounded-xl font-bold text-sm transition">
         Business
-
       </button>
-
-
-      <button
-        data-category="web3"
-        class="cat-btn bg-white
-               text-slate-700
-               border-slate-200
-               px-5 py-2.5
-               rounded-xl
-               font-bold text-sm">
-
+      <button data-category="web3" class="cat-btn bg-white text-slate-700 hover:text-ewf-green border border-slate-200 px-5 py-2.5 rounded-xl font-bold text-sm transition">
         Web3
-
       </button>
-
-
-      <button
-        data-category="development"
-        class="cat-btn bg-white
-               text-slate-700
-               border-slate-200
-               px-5 py-2.5
-               rounded-xl
-               font-bold text-sm">
-
+      <button data-category="development" class="cat-btn bg-white text-slate-700 hover:text-ewf-green border border-slate-200 px-5 py-2.5 rounded-xl font-bold text-sm transition">
         Training
-
       </button>
-
     </div>
-
 
     <!-- RESULTS INFO -->
-
-    <div
-      class="flex flex-col sm:flex-row
-             justify-between
-             items-center gap-3 mb-5">
-
-      <p
-        id="resultsText"
-        class="text-sm
-               text-slate-600
-               font-medium">
-
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-3 mb-6">
+      <p id="resultsText" class="text-sm text-slate-600 font-semibold">
         Showing all solutions
-
       </p>
-
-
-      <button
-        id="clearSearch"
-        class="hidden text-sm
-               font-bold
-               text-ewf-green
-               hover:text-ewf-forest">
-
+      <button id="clearSearch" class="hidden text-sm font-bold text-ewf-green hover:text-ewf-forest underline transition">
         Clear Search
-
       </button>
-
     </div>
-
 
     <!-- PRODUCT GRID -->
-
-    <div
-      id="product-grid"
-      class="grid md:grid-cols-2
-             lg:grid-cols-3
-             gap-7">
-
-    </div>
-
+    <div id="product-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
 
     <!-- EMPTY STATE -->
-
-    <div
-      id="emptyState"
-      class="hidden
-             bg-white
-             rounded-3xl
-             border border-slate-200
-             p-10 text-center">
-
-      <div
-        class="w-16 h-16
-               rounded-full
-               bg-ewf-soft
-               text-ewf-green
-               flex items-center
-               justify-center
-               mx-auto mb-5">
-
-        <i class="fa-solid fa-magnifying-glass text-xl"></i>
-
+    <div id="emptyState" class="hidden bg-white rounded-3xl border border-slate-200 p-12 text-center shadow-sm">
+      <div class="w-16 h-16 rounded-full bg-ewf-soft text-ewf-green flex items-center justify-center mx-auto mb-5 text-2xl">
+        <i class="fa-solid fa-magnifying-glass"></i>
       </div>
-
-
-      <h3
-        class="font-extrabold
-               text-xl
-               text-ewf-navy">
-
-        We couldn't find that solution.
-
-      </h3>
-
-
-      <p
-        class="text-slate-600
-               mt-2 mb-6">
-
-        Tell EWF what you need and
-        we can explore the appropriate
-        solution with you.
-
+      <h3 class="font-extrabold text-xl text-ewf-navy mb-2">We couldn't find that solution.</h3>
+      <p class="text-slate-600 max-w-md mx-auto mb-8">
+        Tell EWF what you need and we can explore the appropriate solution with you.
       </p>
-
-
-      <a
-        href="https://wa.me/2348062331041?text=Hello%20EWF,%20I%20could%20not%20find%20the%20solution%20I%20need%20in%20the%20marketplace.%20I%20would%20like%20to%20discuss%20my%20requirement."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex
-               bg-ewf-green
-               hover:bg-ewf-forest
-               text-white
-               font-bold
-               px-6 py-3
-               rounded-xl">
-
-        <i class="fa-brands fa-whatsapp mr-2"></i>
-
+      <a href="https://wa.me/2348062331041?text=Hello%20EWF%2C%20I%20could%20not%20find%20the%20solution%20I%20need%20in%20the%20marketplace.%20I%20would%20like%20to%20discuss%20my%20requirement." 
+         target="_blank" rel="noopener noreferrer" 
+         class="inline-flex items-center gap-2 bg-ewf-green hover:bg-ewf-forest text-white font-bold px-7 py-3.5 rounded-xl shadow-md transition">
+        <i class="fa-brands fa-whatsapp text-lg"></i>
         Discuss My Requirement
-
       </a>
-
     </div>
 
   </div>
-
 </section>
 
-
-
-<!-- =========================================================
-     BUILD WITH EWF
-========================================================== -->
-
-<section
-  class="ewf-gradient
-         text-white
-         py-16">
-
-  <div
-    class="max-w-7xl mx-auto
-           px-4 sm:px-6 lg:px-8">
-
-    <div
-      class="flex flex-col
-             lg:flex-row
-             items-center
-             justify-between
-             gap-8">
-
-
+<!-- BUILD WITH EWF BANNER -->
+<section class="ewf-gradient text-white py-16 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
       <div class="max-w-3xl">
-
-        <span
-          class="inline-flex
-                 bg-white/10
-                 border border-white/20
-                 text-ewf-goldLight
-                 text-xs font-bold
-                 px-3 py-1.5
-                 rounded-full
-                 uppercase tracking-wider">
-
+        <span class="inline-flex bg-white/10 border border-white/20 text-ewf-goldLight text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider mb-3">
           Strategic Collaboration
-
         </span>
-
-
-        <h2
-          class="text-3xl md:text-4xl
-                 font-extrabold
-                 mt-4 mb-4">
-
-          Don't See Exactly
-          What You Need?
-
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2 mb-3">
+          Don't See Exactly What You Need?
         </h2>
-
-
-        <p
-          class="text-slate-200
-                 leading-relaxed">
-
-          Not every solution can be listed as a
-          standard marketplace item. EWF can
-          work with you to understand the problem,
-          identify the right technical capabilities
-          and explore an appropriate project,
-          partnership or implementation pathway.
-
+        <p class="text-slate-200 leading-relaxed text-base">
+          Not every solution can be listed as a standard marketplace item. EWF can work with you to understand the problem, identify the right technical capabilities and explore an appropriate project, partnership or implementation pathway.
         </p>
-
       </div>
 
-
-      <a
-        href="https://wa.me/2348062331041?text=Hello%20eWorldfeeders%20Global%20Link,%20I%20have%20a%20specific%20problem%20or%20project%20and%20would%20like%20to%20explore%20a%20solution."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="shrink-0
-               bg-ewf-gold
-               hover:bg-ewf-goldLight
-               text-ewf-navy
-               font-extrabold
-               px-7 py-4
-               rounded-xl
-               shadow-xl">
-
-        <i class="fa-brands fa-whatsapp mr-2"></i>
-
+      <a href="https://wa.me/2348062331041?text=Hello%20eWorldfeeders%20Global%20Link%2C%20I%20have%20a%20specific%20problem%20or%20project%20and%20would%20like%20to%20explore%20a%20solution." 
+         target="_blank" rel="noopener noreferrer" 
+         class="shrink-0 bg-ewf-gold hover:bg-ewf-goldLight text-ewf-navy font-extrabold px-8 py-4 rounded-xl shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+        <i class="fa-brands fa-whatsapp text-lg"></i>
         Start a Conversation
-
       </a>
-
     </div>
-
   </div>
-
 </section>
 
-
-
-<!-- =========================================================
-     HOW WE WORK
-========================================================== -->
-
-<section id="how-it-works"
-         class="py-20 bg-white">
-
-  <div
-    class="max-w-7xl mx-auto
-           px-4 sm:px-6 lg:px-8">
-
-
-    <div
-      class="text-center
-             max-w-3xl mx-auto
-             mb-12">
-
-      <span
-        class="text-ewf-green
-               font-extrabold text-xs
-               uppercase tracking-widest">
-
+<!-- HOW WE WORK -->
+<section id="how-it-works" class="py-24 bg-white border-t border-slate-200/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-ewf-green font-extrabold text-xs uppercase tracking-widest bg-ewf-soft px-3 py-1.5 rounded-md border border-ewf-green/20">
         Our Process
-
       </span>
-
-
-      <h2
-        class="text-3xl md:text-4xl
-               font-extrabold
-               text-ewf-navy mt-3">
-
-        From Problem to
-        Practical Solution
-
+      <h2 class="text-3xl md:text-4xl font-extrabold text-ewf-navy mt-4">
+        From Problem to Practical Solution
       </h2>
-
     </div>
 
-
-    <div
-      class="grid md:grid-cols-4
-             gap-6">
-
-
-      <div class="text-center">
-
-        <div
-          class="w-14 h-14 rounded-full
-                 bg-ewf-soft
-                 text-ewf-green
-                 border border-ewf-green/20
-                 flex items-center
-                 justify-center
-                 text-xl font-extrabold
-                 mx-auto mb-4">
-
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="text-center group">
+        <div class="w-16 h-16 rounded-2xl bg-ewf-soft text-ewf-green border border-ewf-green/20 flex items-center justify-center text-xl font-extrabold mx-auto mb-5 shadow-sm group-hover:bg-ewf-green group-hover:text-white transition-all">
           01
-
         </div>
-
-
-        <h3
-          class="font-extrabold
-                 text-ewf-navy mb-2">
-
-          Understand
-
-        </h3>
-
-
-        <p
-          class="text-sm text-slate-600
-                 leading-relaxed">
-
-          We understand your business,
-          project, challenge or opportunity.
-
+        <h3 class="font-extrabold text-xl text-ewf-navy mb-2">Understand</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          We understand your business, project, challenge or opportunity.
         </p>
-
       </div>
 
-
-      <div class="text-center">
-
-        <div
-          class="w-14 h-14 rounded-full
-                 bg-ewf-soft
-                 text-ewf-green
-                 border border-ewf-green/20
-                 flex items-center
-                 justify-center
-                 text-xl font-extrabold
-                 mx-auto mb-4">
-
+      <div class="text-center group">
+        <div class="w-16 h-16 rounded-2xl bg-ewf-soft text-ewf-green border border-ewf-green/20 flex items-center justify-center text-xl font-extrabold mx-auto mb-5 shadow-sm group-hover:bg-ewf-green group-hover:text-white transition-all">
           02
-
         </div>
-
-
-        <h3
-          class="font-extrabold
-                 text-ewf-navy mb-2">
-
-          Design
-
-        </h3>
-
-
-        <p
-          class="text-sm text-slate-600
-                 leading-relaxed">
-
-          We identify the appropriate
-          technology, resources and
-          implementation pathway.
-
+        <h3 class="font-extrabold text-xl text-ewf-navy mb-2">Design</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          We identify the appropriate technology, resources and implementation pathway.
         </p>
-
       </div>
 
-
-      <div class="text-center">
-
-        <div
-          class="w-14 h-14 rounded-full
-                 bg-amber-100
-                 text-ewf-dark
-                 border border-ewf-gold/40
-                 flex items-center
-                 justify-center
-                 text-xl font-extrabold
-                 mx-auto mb-4">
-
+      <div class="text-center group">
+        <div class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-800 border border-amber-300/40 flex items-center justify-center text-xl font-extrabold mx-auto mb-5 shadow-sm group-hover:bg-ewf-gold group-hover:text-ewf-navy transition-all">
           03
-
         </div>
-
-
-        <h3
-          class="font-extrabold
-                 text-ewf-navy mb-2">
-
-          Implement
-
-        </h3>
-
-
-        <p
-          class="text-sm text-slate-600
-                 leading-relaxed">
-
-          We develop, coordinate or
-          facilitate implementation with
-          suitable technical capabilities.
-
+        <h3 class="font-extrabold text-xl text-ewf-navy mb-2">Implement</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          We develop, coordinate or facilitate implementation with suitable technical capabilities.
         </p>
-
       </div>
 
-
-      <div class="text-center">
-
-        <div
-          class="w-14 h-14 rounded-full
-                 bg-ewf-soft
-                 text-ewf-green
-                 border border-ewf-green/20
-                 flex items-center
-                 justify-center
-                 text-xl font-extrabold
-                 mx-auto mb-4">
-
+      <div class="text-center group">
+        <div class="w-16 h-16 rounded-2xl bg-ewf-soft text-ewf-green border border-ewf-green/20 flex items-center justify-center text-xl font-extrabold mx-auto mb-5 shadow-sm group-hover:bg-ewf-green group-hover:text-white transition-all">
           04
-
         </div>
-
-
-        <h3
-          class="font-extrabold
-                 text-ewf-navy mb-2">
-
-          Grow
-
-        </h3>
-
-
-        <p
-          class="text-sm text-slate-600
-                 leading-relaxed">
-
-          We explore improvement,
-          adoption, sustainability and
-          opportunities for scale.
-
+        <h3 class="font-extrabold text-xl text-ewf-navy mb-2">Grow</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          We explore improvement, adoption, sustainability and opportunities for scale.
         </p>
-
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-
-
-<!-- =========================================================
-     EWF ACADEMY
-========================================================== -->
-
-<section
-  class="ewf-gradient
-         text-white
-         py-20">
-
-  <div
-    class="max-w-7xl mx-auto
-           px-4 sm:px-6 lg:px-8">
-
-    <div
-      class="flex flex-col
-             md:flex-row
-             items-center
-             justify-between
-             gap-10">
-
-
+<!-- EWF ACADEMY -->
+<section class="ewf-gradient text-white py-20 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-10">
       <div class="max-w-2xl">
-
-        <span
-          class="inline-flex
-                 items-center gap-2
-                 bg-white/10
-                 border border-white/20
-                 text-ewf-goldLight
-                 px-3.5 py-1.5
-                 rounded-full
-                 text-xs font-bold
-                 uppercase tracking-wider">
-
-          <i class="fa-solid fa-graduation-cap"></i>
-
-          EWF Academy
-
+        <span class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-ewf-goldLight px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+          <i class="fa-solid fa-graduation-cap"></i> EWF Academy
         </span>
-
-
-        <h2
-          class="text-3xl md:text-4xl
-                 font-extrabold
-                 mt-4 mb-5">
-
-          Developing the People
-          Behind the Technology
-
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
+          Developing the People Behind the Technology
         </h2>
-
-
-        <p
-          class="text-slate-200
-                 leading-relaxed">
-
-          EWF's education initiative focuses
-          on practical digital and technology
-          skills, including AI Prompt Engineering,
-          software development, digital innovation
-          and other emerging capabilities.
-
+        <p class="text-slate-200 leading-relaxed">
+          EWF's education initiative focuses on practical digital and technology skills, including AI Prompt Engineering, software development, digital innovation and other emerging capabilities.
         </p>
-
       </div>
 
-
-      <a
-        href="https://ewf.edu.netlify.app"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="shrink-0
-               bg-ewf-gold
-               hover:bg-ewf-goldLight
-               text-ewf-navy
-               font-extrabold
-               px-8 py-4
-               rounded-xl
-               shadow-xl">
-
-        Visit EWF Academy
-
-        <i class="fa-solid fa-arrow-right ml-2"></i>
-
+      <a href="https://ewf.edu.netlify.app/" target="_blank" rel="noopener noreferrer" 
+         class="shrink-0 bg-ewf-gold hover:bg-ewf-goldLight text-ewf-navy font-extrabold px-8 py-4 rounded-xl shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+        Visit EWF Academy <i class="fa-solid fa-arrow-right"></i>
       </a>
-
     </div>
-
   </div>
-
 </section>
 
+<!-- CONTACT / LEAD CONVERSION -->
+<section id="contact" class="py-24 bg-ewf-cream border-t border-slate-200/60">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white rounded-3xl p-8 md:p-14 shadow-xl border border-slate-200/80 text-center relative overflow-hidden">
 
-
-<!-- =========================================================
-     CONTACT / LEAD CONVERSION
-========================================================== -->
-
-<section id="contact"
-         class="py-20 bg-ewf-cream">
-
-  <div
-    class="max-w-5xl mx-auto
-           px-4 sm:px-6 lg:px-8">
-
-    <div
-      class="bg-white
-             rounded-3xl
-             p-8 md:p-12
-             shadow-ewf
-             border border-ewf-green/20
-             text-center">
-
-
-      <span
-        class="text-ewf-green
-               font-extrabold text-xs
-               uppercase tracking-widest">
-
+      <span class="text-ewf-green font-extrabold text-xs uppercase tracking-widest bg-ewf-soft px-3 py-1.5 rounded-md border border-ewf-green/20">
         Let's Build Something Useful
-
       </span>
 
-
-      <h2
-        class="text-3xl md:text-4xl
-               font-extrabold
-               text-ewf-navy
-               mt-3 mb-4">
-
-        Have a Problem,
-        Project or Opportunity?
-
+      <h2 class="text-3xl md:text-4xl font-extrabold text-ewf-navy mt-4 mb-4">
+        Have a Problem, Project or Opportunity?
       </h2>
 
-
-      <p
-        class="text-slate-600
-               max-w-2xl mx-auto
-               leading-relaxed mb-8">
-
-        You do not need to know exactly what
-        technology you need. Tell EWF what
-        you are trying to achieve and we can
-        explore the appropriate solution,
-        technical requirement or partnership
-        pathway together.
-
+      <p class="text-slate-600 max-w-2xl mx-auto leading-relaxed mb-10 text-base">
+        You do not need to know exactly what technology you need. Tell EWF what you are trying to achieve and we can explore the appropriate solution, technical requirement or partnership pathway together.
       </p>
 
-
-      <div
-        class="flex flex-wrap
-               justify-center gap-4">
-
-
-        <a
-          href="https://wa.me/2348062331041?text=Hello%20eWorldfeeders%20Global%20Link,%20I%20have%20a%20problem%20or%20project%20I%20would%20like%20EWF%20to%20help%20me%20solve.%0A%0AMy%20requirement%3A"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="bg-ewf-green
-                 hover:bg-ewf-forest
-                 text-white
-                 font-extrabold
-                 px-7 py-3.5
-                 rounded-xl
-                 shadow-lg">
-
-          <i class="fa-brands fa-whatsapp text-lg mr-2"></i>
-
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://wa.me/2348062331041?text=Hello%20eWorldfeeders%20Global%20Link%2C%20I%20have%20a%20problem%20or%20project%20I%20would%20like%20EWF%20to%20help%20me%20solve.%0A%0AMy%20requirement%3A" 
+           target="_blank" rel="noopener noreferrer" 
+           class="bg-ewf-green hover:bg-ewf-forest text-white font-extrabold px-8 py-4 rounded-xl shadow-lg transition-all flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
           Tell EWF Your Requirement
-
         </a>
 
-
-        <a
-          href="mailto:eworldfeedersgloballink@gmail.com?subject=EWF%20Solution%20Marketplace%20Enquiry"
-          class="border border-ewf-green/30
-                 bg-ewf-soft
-                 hover:border-ewf-green
-                 text-ewf-green
-                 font-extrabold
-                 px-7 py-3.5
-                 rounded-xl">
-
-          <i class="fa-solid fa-envelope mr-2"></i>
-
+        <a href="mailto:eworldfeedersgloballink@gmail.com?subject=EWF%20Solution%20Marketplace%20Enquiry" 
+           class="border border-slate-300 bg-slate-50 hover:bg-slate-100 text-ewf-navy font-bold px-8 py-4 rounded-xl transition-all flex items-center gap-2">
+          <i class="fa-solid fa-envelope text-ewf-green"></i>
           Send an Email
-
         </a>
-
       </div>
 
     </div>
-
   </div>
-
 </section>
 
-
-
-<!-- =========================================================
-     FOOTER
-========================================================== -->
-
-<footer
-  class="bg-ewf-navy
-         text-slate-300
-         pt-14 pb-7">
-
-
-  <div
-    class="max-w-7xl mx-auto
-           px-4 sm:px-6 lg:px-8">
-
-
-    <div
-      class="grid md:grid-cols-2
-             lg:grid-cols-4
-             gap-10">
-
+<!-- FOOTER -->
+<footer class="bg-ewf-navy text-slate-300 pt-16 pb-8 border-t border-ewf-emerald/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
 
       <!-- BRAND -->
-
       <div>
-
-        <div
-          class="flex items-center
-                 gap-3 mb-5">
-
-          <div
-            class="w-11 h-11
-                   rounded-xl
-                   bg-ewf-green
-                   flex items-center
-                   justify-center
-                   text-white
-                   font-black">
-
+        <div class="flex items-center gap-3.5 mb-5">
+          <div class="w-10 h-10 rounded-xl bg-ewf-green flex items-center justify-center text-white font-black text-base shadow-sm">
             EWF
-
           </div>
-
-
           <div>
-
-            <div
-              class="font-extrabold
-                     text-white text-lg">
-
+            <div class="font-extrabold text-white text-lg leading-none">
               eWorldfeeders
-
             </div>
-
-
-            <div
-              class="text-xs
-                     text-ewf-gold
-                     font-bold">
-
+            <div class="text-xs text-ewf-gold font-bold uppercase tracking-wider mt-1">
               Global Link
-
             </div>
-
           </div>
-
         </div>
 
-
-        <p
-          class="text-sm
-                 leading-relaxed
-                 mb-5">
-
-          A Nigerian technology-driven
-          enterprise building and coordinating
-          practical digital, energy, AgroTech
-          and business solutions.
-
+        <p class="text-sm text-slate-400 leading-relaxed mb-6">
+          A Nigerian technology-driven enterprise building and coordinating practical digital, energy, AgroTech and business solutions.
         </p>
 
-
-        <p
-          class="text-sm font-bold
-                 text-ewf-goldLight">
-
-          Living For Humanity
-          Is Our Number One.
-
+        <p class="text-sm font-bold text-ewf-goldLight flex items-center gap-2">
+          <i class="fa-solid fa-star text-xs"></i> Living For Humanity Is Our Number One.
         </p>
-
       </div>
-
 
       <!-- ECOSYSTEM -->
-
       <div>
-
-        <h4
-          class="text-white
-                 font-extrabold mb-5">
-
-          EWF Ecosystem
-
-        </h4>
-
-
+        <h4 class="text-white font-extrabold text-base mb-5">EWF Ecosystem</h4>
         <ul class="space-y-3 text-sm">
-
           <li>
-
-            <a
-              href="https://eworldfeedersgloballink.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-ewf-gold">
-
-              <i class="fa-solid fa-globe
-                        text-ewf-green mr-2"></i>
-
-              Main EWF Website
-
+            <a href="https://eworldfeedersgloballink.netlify.app/" target="_blank" rel="noopener noreferrer" class="hover:text-ewf-goldLight transition flex items-center gap-2">
+              <i class="fa-solid fa-globe text-ewf-green"></i> Main EWF Website
             </a>
-
           </li>
-
-
           <li>
-
-            <a
-              href="https://ewfpartners.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-ewf-gold">
-
-              <i class="fa-solid fa-seedling
-                        text-ewf-green mr-2"></i>
-
-              Agro Partners
-
+            <a href="https://ewfpartners.netlify.app/" target="_blank" rel="noopener noreferrer" class="hover:text-ewf-goldLight transition flex items-center gap-2">
+              <i class="fa-solid fa-seedling text-ewf-green"></i> Agro Partners
             </a>
-
           </li>
-
-
           <li>
-
-            <a
-              href="https://eworldfeedersgloballink.netlify.app/#partner"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-ewf-gold">
-
-              <i class="fa-solid fa-handshake
-                        text-ewf-green mr-2"></i>
-
-              General Partnership
-
+            <a href="https://eworldfeedersgloballink.netlify.app/#partner" target="_blank" rel="noopener noreferrer" class="hover:text-ewf-goldLight transition flex items-center gap-2">
+              <i class="fa-solid fa-handshake text-ewf-green"></i> General Partnership
             </a>
-
           </li>
-
-
           <li>
-
-            <a
-              href="https://ewf.edu.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-ewf-gold">
-
-              <i class="fa-solid fa-graduation-cap
-                        text-ewf-gold mr-2"></i>
-
-              EWF Academy
-
+            <a href="https://ewf.edu.netlify.app/" target="_blank" rel="noopener noreferrer" class="hover:text-ewf-goldLight transition flex items-center gap-2">
+              <i class="fa-solid fa-graduation-cap text-ewf-gold"></i> EWF Academy
             </a>
-
           </li>
-
-
           <li>
-
-            <a
-              href="https://www.facebook.com/eworldfeedersgloballink"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-ewf-gold">
-
-              <i class="fa-brands fa-facebook
-                        text-blue-400 mr-2"></i>
-
-              Official Facebook
-
+            <a href="https://www.facebook.com/eworldfeedersgloballink" target="_blank" rel="noopener noreferrer" class="hover:text-ewf-goldLight transition flex items-center gap-2">
+              <i class="fa-brands fa-facebook text-blue-400"></i> Official Facebook
             </a>
-
           </li>
-
         </ul>
-
       </div>
-
 
       <!-- SOLUTIONS -->
-
       <div>
-
-        <h4
-          class="text-white
-                 font-extrabold mb-5">
-
-          Solution Areas
-
-        </h4>
-
-
-        <ul
-          class="space-y-3 text-sm">
-
+        <h4 class="text-white font-extrabold text-base mb-5">Solution Areas</h4>
+        <ul class="space-y-2.5 text-sm text-slate-400">
           <li>Technology & Software</li>
-
           <li>AI & Automation</li>
-
           <li>AgroTech</li>
-
           <li>Renewable Energy</li>
-
           <li>FinTech Automation</li>
-
           <li>Digital Transformation</li>
-
           <li>Web3 & Digital Assets</li>
-
           <li>Human Development</li>
-
         </ul>
-
       </div>
-
 
       <!-- CONTACT -->
-
       <div>
-
-        <h4
-          class="text-white
-                 font-extrabold mb-5">
-
-          Connect With EWF
-
-        </h4>
-
-
+        <h4 class="text-white font-extrabold text-base mb-5">Connect With EWF</h4>
         <ul class="space-y-4 text-sm">
-
-
-          <li class="flex gap-3">
-
-            <i
-              class="fa-brands fa-whatsapp
-                     text-ewf-emerald text-lg">
-
-            </i>
-
-
-            <a
-              href="https://wa.me/2348062331041"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-white">
-
+          <li class="flex items-start gap-3">
+            <i class="fa-brands fa-whatsapp text-ewf-emerald text-lg mt-0.5"></i>
+            <a href="https://wa.me/2348062331041" target="_blank" rel="noopener noreferrer" class="hover:text-ewf-goldLight transition">
               +234 806 233 1041
-
             </a>
-
           </li>
-
-
-          <li class="flex gap-3">
-
-            <i
-              class="fa-solid fa-envelope
-                     text-ewf-emerald mt-1">
-
-            </i>
-
-
-            <a
-              href="mailto:eworldfeedersgloballink@gmail.com"
-              class="hover:text-white break-all">
-
+          <li class="flex items-start gap-3">
+            <i class="fa-solid fa-envelope text-ewf-emerald mt-1"></i>
+            <a href="mailto:eworldfeedersgloballink@gmail.com" class="hover:text-ewf-goldLight transition break-all">
               eworldfeedersgloballink@gmail.com
-
             </a>
-
           </li>
-
-
-          <li class="flex gap-3">
-
-            <i
-              class="fa-solid fa-globe
-                     text-ewf-emerald mt-1">
-
-            </i>
-
-
-            <a
-              href="https://eworldfeedersgloballink.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-white">
-
+          <li class="flex items-start gap-3">
+            <i class="fa-solid fa-globe text-ewf-emerald mt-1"></i>
+            <a href="https://eworldfeedersgloballink.netlify.app/" target="_blank" rel="noopener noreferrer" class="hover:text-ewf-goldLight transition">
               eworldfeedersgloballink.netlify.app
-
             </a>
-
           </li>
-
         </ul>
-
       </div>
 
     </div>
 
-
-    <div
-      class="border-t border-white/10
-             mt-12 pt-6
-             flex flex-col md:flex-row
-             justify-between
-             items-center
-             gap-3
-             text-xs text-slate-400">
-
-      <p>
-
-        © <span id="year"></span>
-        eWorldfeeders Global Link.
-        All Rights Reserved.
-
-      </p>
-
-
-      <p>
-
-        Technology • Agriculture • Energy
-        • Human Development
-
-      </p>
-
+    <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+      <p>© <span id="year"></span> eWorldfeeders Global Link. All Rights Reserved.</p>
+      <p class="font-medium text-slate-500">Technology • Agriculture • Energy • Human Development</p>
     </div>
-
   </div>
-
 </footer>
 
-
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================== -->
-
+<!-- JAVASCRIPT -->
 <script>
-
-
-/* =========================================================
-   CONFIGURATION
-========================================================= */
-
+/* CONFIGURATION */
 const EWF_WHATSAPP = "2348062331041";
 
-
-/* =========================================================
-   MARKETPLACE DATA
-========================================================= */
-
+/* MARKETPLACE DATA */
 const products = [
-
   /* TECHNOLOGY */
-
   {
     category: "technology",
-
     name: "Custom Business Websites",
-
-    description:
-      "Professional responsive websites designed around your organization's goals, services, credibility and digital presence.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Businesses, organizations & professionals",
-
-    icon:
-      "fa-laptop-code"
-
+    description: "Professional responsive websites designed around your organization's goals, services, credibility and digital presence.",
+    delivery: "Project Based",
+    ideal: "Businesses, organizations & professionals",
+    icon: "fa-laptop-code"
   },
-
   {
     category: "technology",
-
     name: "Business Management Software",
-
-    description:
-      "Custom digital systems for organizations that need better records, reporting, workflows and operational management.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "SMEs & organizations",
-
-    icon:
-      "fa-gears"
-
+    description: "Custom digital systems for organizations that need better records, reporting, workflows and operational management.",
+    delivery: "Project Based",
+    ideal: "SMEs & organizations",
+    icon: "fa-gears"
   },
-
   {
     category: "technology",
-
     name: "POS & Inventory Solutions",
-
-    description:
-      "Digital tools for sales recording, inventory management, receipts and business reporting.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Retailers & businesses",
-
-    icon:
-      "fa-cash-register"
-
+    description: "Digital tools for sales recording, inventory management, receipts and business reporting.",
+    delivery: "Project Based",
+    ideal: "Retailers & businesses",
+    icon: "fa-cash-register"
   },
-
   {
     category: "technology",
-
     name: "School Digital Systems",
-
-    description:
-      "Digital systems supporting school administration, results management and other institutional workflows.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Schools & education providers",
-
-    icon:
-      "fa-school"
-
+    description: "Digital systems supporting school administration, results management and other institutional workflows.",
+    delivery: "Project Based",
+    ideal: "Schools & education providers",
+    icon: "fa-school"
   },
-
 
   /* AI */
-
   {
     category: "ai",
-
     name: "AI Prompt Engineering",
-
-    description:
-      "Practical prompt engineering support for individuals, businesses and teams seeking to use AI more effectively.",
-
-    delivery:
-      "Training / Consultation",
-
-    ideal:
-      "Professionals & businesses",
-
-    icon:
-      "fa-terminal"
-
+    description: "Practical prompt engineering support for individuals, businesses and teams seeking to use AI more effectively.",
+    delivery: "Training / Consultation",
+    ideal: "Professionals & businesses",
+    icon: "fa-terminal"
   },
-
   {
     category: "ai",
-
     name: "AI Business Training",
-
-    description:
-      "Practical training covering responsible AI adoption, prompting, productivity workflows and business applications.",
-
-    delivery:
-      "Scheduled Training",
-
-    ideal:
-      "Teams & organizations",
-
-    icon:
-      "fa-chalkboard-user"
-
+    description: "Practical training covering responsible AI adoption, prompting, productivity workflows and business applications.",
+    delivery: "Scheduled Training",
+    ideal: "Teams & organizations",
+    icon: "fa-chalkboard-user"
   },
-
   {
     category: "ai",
-
     name: "AI Workflow Development",
-
-    description:
-      "AI-assisted workflows for repetitive business, communication and information tasks.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Businesses & organizations",
-
-    icon:
-      "fa-robot"
-
+    description: "AI-assisted workflows for repetitive business, communication and information tasks.",
+    delivery: "Project Based",
+    ideal: "Businesses & organizations",
+    icon: "fa-robot"
   },
-
   {
     category: "ai",
-
     name: "AI & Digital Innovation Consulting",
-
-    description:
-      "Strategic guidance for organizations exploring practical applications of AI and digital technologies.",
-
-    delivery:
-      "Consultation",
-
-    ideal:
-      "Organizations & entrepreneurs",
-
-    icon:
-      "fa-brain"
-
+    description: "Strategic guidance for organizations exploring practical applications of AI and digital technologies.",
+    delivery: "Consultation",
+    ideal: "Organizations & entrepreneurs",
+    icon: "fa-brain"
   },
-
 
   /* AGRICULTURE */
-
   {
     category: "agriculture",
-
     name: "Farm Digitization",
-
-    description:
-      "Digital approaches for farm records, planning, monitoring, production information and agricultural operations.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Farmers & farm businesses",
-
-    icon:
-      "fa-wheat-awn"
-
+    description: "Digital approaches for farm records, planning, monitoring, production information and agricultural operations.",
+    delivery: "Project Based",
+    ideal: "Farmers & farm businesses",
+    icon: "fa-wheat-awn"
   },
-
   {
     category: "agriculture",
-
     name: "AgroTech Development",
-
-    description:
-      "Technology-enabled agriculture solutions developed or coordinated according to specific farm and project requirements.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Farmers & agro businesses",
-
-    icon:
-      "fa-tractor"
-
+    description: "Technology-enabled agriculture solutions developed or coordinated according to specific farm and project requirements.",
+    delivery: "Project Based",
+    ideal: "Farmers & agro businesses",
+    icon: "fa-tractor"
   },
-
   {
     category: "agriculture",
-
     name: "Agricultural Partnership",
-
-    description:
-      "Opportunities to connect agricultural stakeholders around production, distribution, market access and development initiatives.",
-
-    delivery:
-      "Partnership Based",
-
-    ideal:
-      "Farmers & agro stakeholders",
-
-    icon:
-      "fa-handshake"
-
+    description: "Opportunities to connect agricultural stakeholders around production, distribution, market access and development initiatives.",
+    delivery: "Partnership Based",
+    ideal: "Farmers & agro stakeholders",
+    icon: "fa-handshake"
   },
-
   {
     category: "agriculture",
-
     name: "Agricultural Market Linkages",
-
-    description:
-      "Exploring connections between farmers, businesses, processors, distributors and other agricultural stakeholders.",
-
-    delivery:
-      "Partnership Based",
-
-    ideal:
-      "Farmers & businesses",
-
-    icon:
-      "fa-chart-line"
-
+    description: "Exploring connections between farmers, businesses, processors, distributors and other agricultural stakeholders.",
+    delivery: "Partnership Based",
+    ideal: "Farmers & businesses",
+    icon: "fa-chart-line"
   },
-
 
   /* ENERGY */
-
   {
     category: "energy",
-
     name: "Solar Energy Assessment",
-
-    description:
-      "Assessment and planning support for solar power requirements across homes, businesses, farms and facilities.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Homes, businesses & farms",
-
-    icon:
-      "fa-solar-panel"
-
+    description: "Assessment and planning support for solar power requirements across homes, businesses, farms and facilities.",
+    delivery: "Project Based",
+    ideal: "Homes, businesses & farms",
+    icon: "fa-solar-panel"
   },
-
   {
     category: "energy",
-
     name: "Solar System Design",
-
-    description:
-      "Solar system sizing and design support based on power requirements and operating conditions.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Businesses & facilities",
-
-    icon:
-      "fa-compass-drafting"
-
+    description: "Solar system sizing and design support based on power requirements and operating conditions.",
+    delivery: "Project Based",
+    ideal: "Businesses & facilities",
+    icon: "fa-compass-drafting"
   },
-
   {
     category: "energy",
-
     name: "Renewable Energy Partnerships",
-
-    description:
-      "Collaboration opportunities around clean-energy projects, technical implementation and deployment.",
-
-    delivery:
-      "Partnership Based",
-
-    ideal:
-      "Energy professionals & organizations",
-
-    icon:
-      "fa-plug-circle-bolt"
-
+    description: "Collaboration opportunities around clean-energy projects, technical implementation and deployment.",
+    delivery: "Partnership Based",
+    ideal: "Energy professionals & organizations",
+    icon: "fa-plug-circle-bolt"
   },
-
 
   /* FINTECH */
-
   {
     category: "fintech",
-
     name: "Cooperative Management System",
-
-    description:
-      "Digital tools for cooperative records, savings, loans, shares, member management, transactions and reporting.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Cooperatives & associations",
-
-    icon:
-      "fa-users-gear"
-
+    description: "Digital tools for cooperative records, savings, loans, shares, member management, transactions and reporting.",
+    delivery: "Project Based",
+    ideal: "Cooperatives & associations",
+    icon: "fa-users-gear"
   },
-
   {
     category: "fintech",
-
     name: "FinTech Automation",
-
-    description:
-      "Business-oriented financial record and workflow automation designed around organizational requirements.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Organizations & enterprises",
-
-    icon:
-      "fa-money-bill-transfer"
-
+    description: "Business-oriented financial record and workflow automation designed around organizational requirements.",
+    delivery: "Project Based",
+    ideal: "Organizations & enterprises",
+    icon: "fa-money-bill-transfer"
   },
-
 
   /* BUSINESS */
-
   {
     category: "business",
-
     name: "Digital Transformation",
-
-    description:
-      "Helping traditional businesses identify processes that can be improved through digital systems and technology.",
-
-    delivery:
-      "Consultation / Project",
-
-    ideal:
-      "Traditional businesses",
-
-    icon:
-      "fa-chart-pie"
-
+    description: "Helping traditional businesses identify processes that can be improved through digital systems and technology.",
+    delivery: "Consultation / Project",
+    ideal: "Traditional businesses",
+    icon: "fa-chart-pie"
   },
-
   {
     category: "business",
-
     name: "Business Digital Presence",
-
-    description:
-      "Web presence, business information systems and digital assets designed to improve visibility and credibility.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Businesses & professionals",
-
-    icon:
-      "fa-globe"
-
+    description: "Web presence, business information systems and digital assets designed to improve visibility and credibility.",
+    delivery: "Project Based",
+    ideal: "Businesses & professionals",
+    icon: "fa-globe"
   },
-
   {
     category: "business",
-
     name: "Corporate Branding",
-
-    description:
-      "Professional visual identity, company profiles, marketing materials and digital brand assets.",
-
-    delivery:
-      "Project Based",
-
-    ideal:
-      "Businesses & organizations",
-
-    icon:
-      "fa-pen-nib"
-
+    description: "Professional visual identity, company profiles, marketing materials and digital brand assets.",
+    delivery: "Project Based",
+    ideal: "Businesses & organizations",
+    icon: "fa-pen-nib"
   },
-
   {
     category: "business",
-
     name: "Digital Marketing Support",
-
-    description:
-      "Digital communication, online visibility and campaign support tailored to organizational objectives.",
-
-    delivery:
-      "Project / Retainer",
-
-    ideal:
-      "Businesses & organizations",
-
-    icon:
-      "fa-bullhorn"
-
+    description: "Digital communication, online visibility and campaign support tailored to organizational objectives.",
+    delivery: "Project / Retainer",
+    ideal: "Businesses & organizations",
+    icon: "fa-bullhorn"
   },
-
 
   /* WEB3 */
-
   {
     category: "web3",
-
     name: "Digital Asset Development",
-
-    description:
-      "Exploration and development support for technology-enabled digital asset and Web3 ecosystem concepts.",
-
-    delivery:
-      "Project / Consultation",
-
-    ideal:
-      "Technology projects",
-
-    icon:
-      "fa-cubes"
-
+    description: "Exploration and development support for technology-enabled digital asset and Web3 ecosystem concepts.",
+    delivery: "Project / Consultation",
+    ideal: "Technology projects",
+    icon: "fa-cubes"
   },
-
   {
     category: "web3",
-
     name: "Web3 Integration",
-
-    description:
-      "Exploring practical ways Web3 technologies can connect with digital products, communities and emerging ecosystems.",
-
-    delivery:
-      "Consultation / Project",
-
-    ideal:
-      "Digital projects",
-
-    icon:
-      "fa-link"
-
+    description: "Exploring practical ways Web3 technologies can connect with digital products, communities and emerging ecosystems.",
+    delivery: "Consultation / Project",
+    ideal: "Digital projects",
+    icon: "fa-link"
   },
-
 
   /* DEVELOPMENT */
-
   {
     category: "development",
-
     name: "AI Prompt Engineering Training",
-
-    description:
-      "Practical learning pathway designed to help participants develop useful AI prompting and workflow skills.",
-
-    delivery:
-      "Training",
-
-    ideal:
-      "Students & professionals",
-
-    icon:
-      "fa-graduation-cap"
-
+    description: "Practical learning pathway designed to help participants develop useful AI prompting and workflow skills.",
+    delivery: "Training",
+    ideal: "Students & professionals",
+    icon: "fa-graduation-cap"
   },
-
   {
     category: "development",
-
     name: "Digital Skills Development",
-
-    description:
-      "Practical digital and technology capability development for individuals and organizations.",
-
-    delivery:
-      "Training",
-
-    ideal:
-      "Individuals & teams",
-
-    icon:
-      "fa-laptop"
-
+    description: "Practical digital and technology capability development for individuals and organizations.",
+    delivery: "Training",
+    ideal: "Individuals & teams",
+    icon: "fa-laptop"
   }
-
 ];
 
-
-/* =========================================================
-   STATE
-========================================================= */
-
+/* STATE */
 let activeCategory = "all";
-
 let searchTerm = "";
 
-
-/* =========================================================
-   WHATSAPP BUILDER
-========================================================= */
-
+/* WHATSAPP BUILDER */
 function whatsappLink(message) {
-
-  return `https://wa.me/${EWF_WHATSAPP}?text=${
-    encodeURIComponent(message)
-  }`;
-
+  return `https://wa.me/${EWF_WHATSAPP}?text=${encodeURIComponent(message)}`;
 }
 
-
-/* =========================================================
-   FILTER PRODUCTS
-========================================================= */
-
+/* FILTER PRODUCTS */
 function getFilteredProducts() {
-
   return products.filter(product => {
-
-    const categoryMatch =
-      activeCategory === "all" ||
-      product.category === activeCategory;
-
-    const searchable =
-      `${product.name}
-       ${product.description}
-       ${product.ideal}
-       ${product.delivery}`.toLowerCase();
-
-    const searchMatch =
-      !searchTerm ||
-      searchable.includes(searchTerm.toLowerCase());
-
+    const categoryMatch = activeCategory === "all" || product.category === activeCategory;
+    const searchable = `${product.name} ${product.description} ${product.ideal} ${product.delivery}`.toLowerCase();
+    const searchMatch = !searchTerm || searchable.includes(searchTerm.toLowerCase());
     return categoryMatch && searchMatch;
-
   });
-
 }
 
+/* CATEGORY DISPLAY LABELS */
+const categoryLabels = {
+  technology: "Technology",
+  ai: "AI",
+  agriculture: "AgroTech",
+  energy: "Energy",
+  fintech: "FinTech",
+  business: "Business",
+  web3: "Web3",
+  development: "Training"
+};
 
-/* =========================================================
-   RENDER PRODUCTS
-========================================================= */
-
+/* RENDER PRODUCTS */
 function renderProducts() {
-
-  const grid =
-    document.getElementById("product-grid");
-
-  const emptyState =
-    document.getElementById("emptyState");
-
-  const resultsText =
-    document.getElementById("resultsText");
-
-  const clearSearch =
-    document.getElementById("clearSearch");
-
-  const filtered =
-    getFilteredProducts();
-
+  const grid = document.getElementById("product-grid");
+  const emptyState = document.getElementById("emptyState");
+  const resultsText = document.getElementById("resultsText");
+  const clearSearch = document.getElementById("clearSearch");
+  const filtered = getFilteredProducts();
 
   grid.innerHTML = "";
 
-
   if (filtered.length === 0) {
-
     emptyState.classList.remove("hidden");
-
   } else {
-
     emptyState.classList.add("hidden");
-
   }
 
-
-  if (
-    activeCategory === "all" &&
-    !searchTerm
-  ) {
-
-    resultsText.textContent =
-      `Showing all ${products.length} solutions`;
-
+  if (activeCategory === "all" && !searchTerm) {
+    resultsText.textContent = `Showing all ${products.length} solutions`;
   } else {
-
-    resultsText.textContent =
-      `Showing ${filtered.length} solution${
-        filtered.length === 1 ? "" : "s"
-      }`;
-
+    resultsText.textContent = `Showing ${filtered.length} solution${filtered.length === 1 ? "" : "s"}`;
   }
 
-
-  clearSearch.classList.toggle(
-    "hidden",
-    !searchTerm
-  );
-
+  clearSearch.classList.toggle("hidden", !searchTerm);
 
   filtered.forEach(product => {
+    const discussMessage = `Hello eWorldfeeders Global Link,\n\nI am interested in discussing:\n\n${product.name}\n\nI would like to understand how EWF can help me/business with this solution.`;
+    const quoteMessage = `Hello eWorldfeeders Global Link,\n\nI would like to request information and a quotation for:\n\n${product.name}\n\nPlease share the requirements, implementation process and available options.`;
 
-    const discussMessage =
-
-`Hello eWorldfeeders Global Link,
-
-I am interested in discussing:
-
-${product.name}
-
-I would like to understand how EWF can help me/business with this solution.`;
-
-
-    const quoteMessage =
-
-`Hello eWorldfeeders Global Link,
-
-I would like to request information and a quotation for:
-
-${product.name}
-
-Please share the requirements, implementation process and available options.`;
-
-
-    const discussUrl =
-      whatsappLink(discussMessage);
-
-    const quoteUrl =
-      whatsappLink(quoteMessage);
-
+    const discussUrl = whatsappLink(discussMessage);
+    const quoteUrl = whatsappLink(quoteMessage);
 
     const card = document.createElement("article");
-
-    card.className =
-      "glass-card rounded-2xl p-6 card-hover flex flex-col fade-in";
-
+    card.className = "glass-card rounded-2xl p-7 card-hover flex flex-col justify-between fade-in";
 
     card.innerHTML = `
-
       <div>
-
-        <div class="flex items-start
-                    justify-between gap-4 mb-5">
-
-          <div
-            class="w-12 h-12 rounded-xl
-                   bg-ewf-soft
-                   text-ewf-green
-                   flex items-center
-                   justify-center
-                   text-xl
-                   border border-ewf-green/20">
-
+        <div class="flex items-start justify-between gap-4 mb-5">
+          <div class="w-12 h-12 rounded-xl bg-ewf-soft text-ewf-green flex items-center justify-center text-xl border border-ewf-green/20 shrink-0">
             <i class="fa-solid ${product.icon}"></i>
-
           </div>
-
-
-          <span
-            class="text-[10px]
-                   uppercase
-                   tracking-wider
-                   font-extrabold
-                   px-2.5 py-1
-                   rounded-full
-                   bg-ewf-soft
-                   text-ewf-green">
-
-            ${product.category}
-
+          <span class="text-[11px] uppercase tracking-wider font-extrabold px-3 py-1 rounded-full bg-ewf-soft text-ewf-green border border-ewf-green/10">
+            ${categoryLabels[product.category] || product.category}
           </span>
-
         </div>
 
-
-        <h3
-          class="text-xl
-                 font-extrabold
-                 text-ewf-navy
-                 mb-3">
-
+        <h3 class="text-xl font-extrabold text-ewf-navy mb-2.5 leading-snug">
           ${product.name}
-
         </h3>
 
-
-        <p
-          class="text-sm
-                 text-slate-700
-                 leading-relaxed">
-
+        <p class="text-sm text-slate-600 leading-relaxed">
           ${product.description}
-
         </p>
 
-
-        <div
-          class="mt-5
-                 bg-slate-50
-                 rounded-xl
-                 p-4">
-
-          <div
-            class="flex items-start
-                   gap-2 mb-2">
-
-            <i
-              class="fa-solid
-                     fa-user-group
-                     text-ewf-green
-                     mt-1 text-xs">
-            </i>
-
+        <div class="mt-6 bg-ewf-soft/80 rounded-xl p-4 border border-ewf-green/10 space-y-2.5">
+          <div class="flex items-start gap-2.5">
+            <i class="fa-solid fa-user-group text-ewf-green mt-0.5 text-xs"></i>
             <div>
-
-              <p
-                class="text-[10px]
-                       uppercase
-                       tracking-wider
-                       font-extrabold
-                       text-slate-500">
-
-                Ideal For
-
-              </p>
-
-              <p
-                class="text-xs
-                       font-semibold
-                       text-slate-700
-                       mt-0.5">
-
-                ${product.ideal}
-
-              </p>
-
+              <p class="text-[10px] uppercase tracking-wider font-extrabold text-ewf-green">Ideal For</p>
+              <p class="text-xs font-bold text-slate-800 mt-0.5">${product.ideal}</p>
             </div>
-
           </div>
 
-
-          <div
-            class="flex items-start
-                   gap-2">
-
-            <i
-              class="fa-solid
-                     fa-layer-group
-                     text-ewf-gold
-                     mt-1 text-xs">
-            </i>
-
+          <div class="flex items-start gap-2.5">
+            <i class="fa-solid fa-layer-group text-ewf-gold mt-0.5 text-xs"></i>
             <div>
-
-              <p
-                class="text-[10px]
-                       uppercase
-                       tracking-wider
-                       font-extrabold
-                       text-slate-500">
-
-                Engagement
-
-              </p>
-
-              <p
-                class="text-xs
-                       font-semibold
-                       text-slate-700
-                       mt-0.5">
-
-                ${product.delivery}
-
-              </p>
-
+              <p class="text-[10px] uppercase tracking-wider font-extrabold text-ewf-green">Engagement</p>
+              <p class="text-xs font-bold text-slate-800 mt-0.5">${product.delivery}</p>
             </div>
-
           </div>
-
         </div>
-
       </div>
 
-
-      <div
-        class="mt-6 pt-5
-               border-t border-slate-200">
-
-        <div
-          class="grid grid-cols-2
-                 gap-2">
-
-          <a
-            href="${discussUrl}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="bg-slate-100
-                   hover:bg-slate-200
-                   text-slate-800
-                   font-bold text-xs
-                   py-3 rounded-xl
-                   transition
-                   text-center
-                   flex items-center
-                   justify-center gap-1.5">
-
-            <i
-              class="fa-brands
-                     fa-whatsapp
-                     text-ewf-green">
-            </i>
-
-            Discuss
-
+      <div class="mt-6 pt-5 border-t border-slate-100">
+        <div class="grid grid-cols-2 gap-2.5">
+          <a href="${discussUrl}" target="_blank" rel="noopener noreferrer" 
+             class="bg-ewf-soft hover:bg-ewf-green/15 text-ewf-navy font-bold text-xs py-3 px-2 rounded-xl transition-all text-center flex items-center justify-center gap-1.5 border border-ewf-green/10">
+            <i class="fa-brands fa-whatsapp text-ewf-green text-sm"></i> Discuss
           </a>
-
-
-          <a
-            href="${quoteUrl}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="bg-ewf-green
-                   hover:bg-ewf-forest
-                   text-white
-                   font-bold text-xs
-                   py-3 rounded-xl
-                   transition
-                   text-center
-                   flex items-center
-                   justify-center gap-1.5">
-
-            Request Quote
-
-            <i
-              class="fa-solid
-                     fa-arrow-right">
-            </i>
-
+          <a href="${quoteUrl}" target="_blank" rel="noopener noreferrer" 
+             class="bg-ewf-green hover:bg-ewf-forest text-white font-bold text-xs py-3 px-2 rounded-xl transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
+            Request Quote <i class="fa-solid fa-arrow-right text-[10px]"></i>
           </a>
-
         </div>
-
       </div>
-
     `;
 
-
     grid.appendChild(card);
-
   });
-
 }
 
+/* CATEGORY FILTER */
+document.querySelectorAll(".cat-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    activeCategory = button.dataset.category;
 
-/* =========================================================
-   CATEGORY FILTER
-========================================================= */
+    document.querySelectorAll(".cat-btn").forEach(btn => {
+      btn.classList.remove("category-active");
+      btn.classList.add("bg-white", "text-slate-700");
+    });
 
-document
-  .querySelectorAll(".cat-btn")
-  .forEach(button => {
-
-    button.addEventListener(
-      "click",
-      () => {
-
-        activeCategory =
-          button.dataset.category;
-
-
-        document
-          .querySelectorAll(".cat-btn")
-          .forEach(btn => {
-
-            btn.classList.remove(
-              "category-active"
-            );
-
-            btn.classList.add(
-              "bg-white",
-              "text-slate-700"
-            );
-
-          });
-
-
-        button.classList.remove(
-          "bg-white",
-          "text-slate-700"
-        );
-
-        button.classList.add(
-          "category-active"
-        );
-
-
-        renderProducts();
-
-        document
-          .getElementById("marketplace")
-          .scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          });
-
-      }
-    );
-
-  });
-
-
-/* =========================================================
-   SEARCH
-========================================================= */
-
-const searchInput =
-  document.getElementById("searchInput");
-
-
-searchInput.addEventListener(
-  "input",
-  event => {
-
-    searchTerm =
-      event.target.value.trim();
+    button.classList.remove("bg-white", "text-slate-700");
+    button.classList.add("category-active");
 
     renderProducts();
 
-  }
-);
-
-
-/* =========================================================
-   CLEAR SEARCH
-========================================================= */
-
-document
-  .getElementById("clearSearch")
-  .addEventListener(
-    "click",
-    () => {
-
-      searchInput.value = "";
-
-      searchTerm = "";
-
-      renderProducts();
-
-      searchInput.focus();
-
-    }
-  );
-
-
-/* =========================================================
-   MOBILE MENU
-========================================================= */
-
-const menuButton =
-  document.getElementById("menuButton");
-
-const mobileMenu =
-  document.getElementById("mobileMenu");
-
-const menuIcon =
-  document.getElementById("menuIcon");
-
-
-menuButton.addEventListener(
-  "click",
-  () => {
-
-    const isOpen =
-      mobileMenu.classList.toggle("open");
-
-
-    menuButton.setAttribute(
-      "aria-expanded",
-      isOpen
-    );
-
-
-    menuIcon.className =
-      isOpen
-        ? "fa-solid fa-xmark text-lg"
-        : "fa-solid fa-bars text-lg";
-
-  }
-);
-
-
-/* =========================================================
-   CLOSE MOBILE MENU AFTER LINK
-========================================================= */
-
-document
-  .querySelectorAll(".mobile-link")
-  .forEach(link => {
-
-    link.addEventListener(
-      "click",
-      () => {
-
-        mobileMenu.classList.remove("open");
-
-        menuButton.setAttribute(
-          "aria-expanded",
-          "false"
-        );
-
-        menuIcon.className =
-          "fa-solid fa-bars text-lg";
-
-      }
-    );
-
+    document.getElementById("marketplace").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
   });
+});
 
+/* SEARCH */
+const searchInput = document.getElementById("searchInput");
+searchInput.addEventListener("input", event => {
+  searchTerm = event.target.value.trim();
+  renderProducts();
+});
 
-/* =========================================================
-   YEAR
-========================================================= */
+/* CLEAR SEARCH */
+document.getElementById("clearSearch").addEventListener("click", () => {
+  searchInput.value = "";
+  searchTerm = "";
+  renderProducts();
+  searchInput.focus();
+});
 
-document.getElementById("year")
-  .textContent =
-  new Date().getFullYear();
+/* MOBILE MENU */
+const menuButton = document.getElementById("menuButton");
+const mobileMenu = document.getElementById("mobileMenu");
+const menuIcon = document.getElementById("menuIcon");
 
+menuButton.addEventListener("click", () => {
+  const isOpen = mobileMenu.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", isOpen);
+  menuIcon.className = isOpen ? "fa-solid fa-xmark text-xl" : "fa-solid fa-bars text-xl";
+});
 
-/* =========================================================
-   SOLUTION COUNT
-========================================================= */
+/* CLOSE MOBILE MENU AFTER LINK CLICK */
+document.querySelectorAll(".mobile-link").forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuIcon.className = "fa-solid fa-bars text-xl";
+  });
+});
 
-document.getElementById("solutionCount")
-  .textContent =
-  products.length + "+";
+/* YEAR & COUNT */
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("solutionCount").textContent = products.length + "+";
 
-
-/* =========================================================
-   INITIALIZE
-========================================================= */
-
+/* INITIALIZE */
 renderProducts();
-
 </script>
 
 </body>
